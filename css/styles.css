@@ -1,5 +1,136 @@
 html,
 body {
+	color: white;
+	font-family: Avenir Next, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	background-color: rgba(255, 0, 0, 0.5);
+	text-align: center;
+}
+
+header h1 {
+	font-size: 6em;
+	font-style: bold;
+	margin-top: 0;
+	padding-top: 2em;
+}
+
+header h1 a:hover:after {
+	content: ' 😷';
+}
+
+header p a:hover:after {
+	content: ' 🔍';
+}
+
+header p {
+	font-size: 4em;
+	margin-bottom: 0;
+	padding-bottom: 3em;
+}
+
+div#pic {
+	background-color: rgba(255, 165, 0, 0.5);
+}
+
+img {
+    display: block;
+	margin: auto;
+    max-width: 100%;
+}
+
+blockquote {
+	display: inline-block;
+	font-size: 4em;
+	font-style: italic;
+	margin: 0;
+	padding: 2em;
+	width: 60%;
+}
+
+blockquote a:hover:after {
+	content: ' 🔗';
+}
+
+div#review-1 {
+	background-color: rgba(255, 255, 0, 0.5);
+}
+
+div#review-1 p,
+div#review-1 a {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+div#review-2 {
+	background-color: rgba(0, 128, 0, 0.5);
+    text-align: right;
+}
+
+div#review-3 {
+	background-color: rgba(0, 0, 255, 0.5);
+}
+
+p.source a {
+	font-size: 80%;
+	font-style: normal;
+}
+
+div#contact {
+	background-color: rgba(75, 0, 130, 0.5);
+	font-size: 2.5em;
+	padding: 2em;
+	text-align: center;
+}
+
+div#contact a {
+	color: white;
+}
+
+address {
+	font-style: normal;
+}
+
+address a:hover:before {
+	content: '🏢 ';
+}
+
+div#contact a.phone:hover:before {
+	content: '📱 ';
+}
+
+div#contact a.email:hover:before {
+	content: '✉️ ';
+}
+
+div#contact a.social:hover:before {
+	content: '🐦 ';
+}
+
+footer {
+	background-color: rgba(238, 130, 238, 0.5);
+	text-align: center;
+	margin: 0;
+	min-height: 70vh;
+	padding: 2em 0;
+}
+
+footer a:hover:after {
+	content: ' 🐦';
+}
+
+@media (max-width: 800px) {
+
+	header,
+	main {
+		font-size: 30%;
+	}
+
 }
