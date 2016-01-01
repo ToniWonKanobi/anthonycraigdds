@@ -2,8 +2,9 @@ html,
 body {
 	color: white;
 	font-family: Avenir Next, sans-serif;
-    margin: 0;
-    padding: 0;
+	font-size: 150%;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -13,14 +14,12 @@ a {
 
 header {
 	background-color: rgba(255, 0, 0, 0.5);
-	text-align: center;
-}
+	text-align: center;}
 
 header h1 {
-	font-size: 6em;
 	font-style: bold;
-	margin-top: 0;
-	padding-top: 2em;
+	margin: 0 auto;
+	padding-top: 1.75em;
 }
 
 header h1 a:hover:after {
@@ -32,32 +31,26 @@ header p a:hover:after {
 }
 
 header p {
-	font-size: 4em;
-	margin-bottom: 0;
-	padding-bottom: 3em;
+	margin: auto;
+	padding: 0.5em 0 3em 0;
 }
 
 div#pic {
 	background-color: rgba(255, 165, 0, 0.5);
 }
 
-img {
+div#pic img {
     display: block;
 	margin: auto;
-    max-width: 100%;
+    width: 50%;
+	max-width: 400px;
 }
 
 blockquote {
 	display: inline-block;
-	font-size: 4em;
 	font-style: italic;
-	margin: 0;
+	margin: 0 30% 0 10%;
 	padding: 2em;
-	width: 60%;
-}
-
-blockquote a:hover:after {
-	content: ' 🔗';
 }
 
 div#review-1 {
@@ -69,13 +62,29 @@ div#review-1 a {
 	color: rgba(0, 0, 0, 0.5);
 }
 
+div#review-1 blockquote a:hover:after {
+	content: ' 🤗';
+}
+
 div#review-2 {
 	background-color: rgba(0, 128, 0, 0.5);
     text-align: right;
 }
 
+div#review-2 blockquote a:hover:after {
+	content: ' 🤒';
+}
+
+div#review-2 blockquote {
+	margin: 0 10% 0 30%;
+}
+
 div#review-3 {
 	background-color: rgba(0, 0, 255, 0.5);
+}
+
+div#review-3 blockquote a:hover:after {
+	content: ' 🙃';
 }
 
 p.source a {
@@ -85,7 +94,7 @@ p.source a {
 
 div#contact {
 	background-color: rgba(75, 0, 130, 0.5);
-	font-size: 2.5em;
+	font-size: 75%;
 	padding: 2em;
 	text-align: center;
 }
@@ -94,43 +103,56 @@ div#contact a {
 	color: white;
 }
 
+div#contact address a span.hidden-text,
+div#contact p a span.hidden-text {
+	display: none;
+}
+
+div#contact address a:hover span.hidden-text,
+div#contact p a:hover span.hidden-text {
+	display: initial;
+}
+
 address {
 	font-style: normal;
 }
 
-address a:hover:before {
-	content: '🏢 ';
-}
-
-div#contact a.phone:hover:before {
-	content: '📱 ';
-}
-
-div#contact a.email:hover:before {
-	content: '✉️ ';
-}
-
-div#contact a.social:hover:before {
-	content: '🐦 ';
-}
-
 footer {
 	background-color: rgba(238, 130, 238, 0.5);
+	font-size: 75%;
 	text-align: center;
-	margin: 0;
 	min-height: 70vh;
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
-footer a:hover:after {
-	content: ' 🐦';
+footer p {
+	margin: 1em auto;
+	width: 80%;
 }
 
-@media (max-width: 800px) {
+p#ROYGBIV {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
 
-	header,
-	main {
-		font-size: 30%;
+p#ROYGBIV:hover {
+    opacity: 1;
+}
+
+/* iPhone */
+@media (max-width: 680px) {
+
+	html,
+	body,
+	div#contact,
+	footer {font-size: initial;}
+
+	header h1 {
+		font-size: 1.5em;
+	}
+
+	header p {
+		padding-bottom: 2em;
 	}
 
 }
