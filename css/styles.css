@@ -27,7 +27,7 @@ header h1 a:hover:after {
 }
 
 header p a:hover:after {
-	content: ' 🔍';
+	content: ' 📞';
 }
 
 header p {
@@ -135,8 +135,41 @@ p#ROYGBIV {
     transition: all 0.2s ease-in-out;
 }
 
-p#ROYGBIV:hover {
+p#ROYGBIV:hover:before,
+p#ROYGBIV:hover:after {
+	content: ' 🤓 ';
+}
+
+footer:hover p#ROYGBIV {
     opacity: 1;
+}
+
+span#R {
+	color: red;
+}
+
+span#O {
+	color: orange;
+}
+
+span#Y {
+	color: yellow;
+}
+
+span#G {
+	color: green;
+}
+
+span#B {
+	color: blue;
+}
+
+span#I {
+	color: indigo;
+}
+
+span#V {
+	color: violet;
 }
 
 /* iPhone */
