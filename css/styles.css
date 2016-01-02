@@ -74,7 +74,7 @@ div#review-2 {
 }
 
 div#review-2 blockquote a:hover:after {
-	content: ' 🤒';
+	content: ' 🐻';
 }
 
 div#review-2 blockquote {
@@ -86,7 +86,7 @@ div#review-3 {
 }
 
 div#review-3 blockquote a:hover:after {
-	content: ' 🙃';
+	content: ' 😴';
 }
 
 p.source a {
