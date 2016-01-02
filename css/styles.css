@@ -3,6 +3,7 @@ body {
 	color: white;
 	font-family: "Archer SSm A", "Archer SSm B", Avenir Next, sans-serif;
 	font-size: 150%;
+	font-weight: 500;
 	margin: 0;
 	padding: 0;
 }
@@ -171,6 +172,15 @@ span#I {
 
 span#V {
 	color: violet;
+}
+
+/* iPad */
+@media (max-width: 800px) {
+
+	header h1 {
+		font-size: 1.75em;
+	}
+
 }
 
 /* iPhone */
