@@ -54,13 +54,6 @@ div#pic img {
 	max-width: 400px;
 }
 
-blockquote {
-	display: inline-block;
-	font-style: italic;
-	margin: 0 30% 0 10%;
-	padding: 2em;
-}
-
 div#review-1 {
 	background-color: rgba(255, 255, 0, 0.5);
 }
@@ -68,6 +61,18 @@ div#review-1 {
 div#review-1 p,
 div#review-1 a {
 	color: rgba(0, 0, 0, 0.5);
+}
+
+div.quote-container {
+	margin: auto;
+	max-width: 1000px;
+	width: 80%;
+}
+
+blockquote {
+	font-style: italic;
+	margin: auto;
+	padding: 2em;
 }
 
 div#review-1 blockquote a:hover:after {
@@ -81,10 +86,6 @@ div#review-2 {
 
 div#review-2 blockquote a:hover:after {
 	content: ' 🐻';
-}
-
-div#review-2 blockquote {
-	margin: 0 10% 0 30%;
 }
 
 div#review-3 {
@@ -180,28 +181,9 @@ span#V {
 	color: violet;
 }
 
-/* Wide Displays */
-@media (min-width: 1400px) {
-	blockquote {
-		margin: 0 30% 0 25%;
-	}
-
-	div#review-2 blockquote {
-		margin: 0 25% 0 30%;
-	}
-}
-
-/* iPad */
-@media (max-width: 800px) {
-
-	header h1 {
-		font-size: 1.75em;
-	}
-
-}
-
 /* Big iPhones */
 @media (max-width: 740px) {
+
 	html,
 	body,
 	div#contact,
@@ -212,7 +194,6 @@ span#V {
 	header p#contact-link {
 		padding-bottom: 2.5em;
 	}
-
 
 }
 
