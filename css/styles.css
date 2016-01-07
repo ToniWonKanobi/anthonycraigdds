@@ -20,7 +20,7 @@ header {
 
 header h1 {
 	margin: 0 auto;
-	padding-top: 1.75em;
+	padding-top: 1.5em;
 }
 
 header h1:hover:after,
@@ -28,13 +28,19 @@ header h1:focus:after {
 	content: ' 😷';
 }
 
-header p a:hover:after {
-	content: ' 📞';
+header p#tagline {
+	font-size: 0.75em;
+	margin: auto;
+	padding: 1em 0 2em 0;
 }
 
-header p {
+header p#contact-link {
 	margin: auto;
 	padding: 0.5em 0 3em 0;
+}
+
+header p#contact-link a:hover:after {
+	content: ' 📞';
 }
 
 div#pic {
@@ -174,6 +180,17 @@ span#V {
 	color: violet;
 }
 
+/* Wide Displays */
+@media (min-width: 1400px) {
+	blockquote {
+		margin: 0 30% 0 25%;
+	}
+
+	div#review-2 blockquote {
+		margin: 0 25% 0 30%;
+	}
+}
+
 /* iPad */
 @media (max-width: 800px) {
 
@@ -183,8 +200,24 @@ span#V {
 
 }
 
-/* iPhone */
-@media (max-width: 680px) {
+/* Big iPhones */
+@media (max-width: 740px) {
+	html,
+	body,
+	div#contact,
+	footer {
+		font-size: 1.1em;
+	}
+
+	header p#contact-link {
+		padding-bottom: 2.5em;
+	}
+
+
+}
+
+/* Small iPhones */
+@media (max-width: 320px) {
 
 	html,
 	body,
@@ -193,11 +226,11 @@ span#V {
 		font-size: initial;
 	}
 
-	header h1 {
-		font-size: 1.5em;
+	header p#tagline {
+		padding-bottom: 1em
 	}
 
-	header p {
+	header p#contact-link {
 		padding-bottom: 2em;
 	}
 
