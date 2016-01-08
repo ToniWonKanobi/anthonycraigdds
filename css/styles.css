@@ -191,8 +191,12 @@ span#V {
 		font-size: 1.1em;
 	}
 
+	header h1 {
+		font-size: 8vw;
+	}
+
 	header p#contact-link {
-		padding-bottom: 2.5em;
+		padding-bottom: 5vh;
 	}
 
 }
