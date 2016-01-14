@@ -201,7 +201,7 @@ span#V {
 
 }
 
-/* Small iPhones */
+/* Smaller mobile-device-sized Viewport Widths */
 @media (max-width: 320px) {
 
 	html,
