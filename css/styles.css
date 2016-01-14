@@ -1,9 +1,9 @@
 html,
 body {
 	color: white;
-	font-family: "Archer SSm A", "Archer SSm B", Avenir Next, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Avenir Next, sans-serif;
 	font-size: 150%;
-	font-weight: 500;
+	font-weight: 300;
 	margin: 0;
 	padding: 0;
 }
@@ -19,6 +19,7 @@ header {
 }
 
 header h1 {
+	font-weight: 700;
 	margin: 0 auto;
 	padding-top: 1.5em;
 }
