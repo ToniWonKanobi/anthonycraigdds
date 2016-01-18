@@ -30,18 +30,12 @@ body {
 a {
 	color: white;
 	text-decoration: none;
+	transition: all 0.2s ease-in-out;
 }
 
 header {
-	/*background: var(--red);*/
-	background: rgba(223, 0, 0, 0.50);
+	background: rgba(190, 104, 190, 0.75);
 	text-align: center;
-}
-
-header h1 {
-	font-weight: 700;
-	margin: 0 auto;
-	padding-top: 7vw;
 }
 
 header h1 {
@@ -53,7 +47,7 @@ header h1 {
 
 header h1:hover:after,
 header h1:focus:after {
-	content: ' 😷';
+	content: ' 😎';
 }
 
 header p#tagline {
@@ -76,74 +70,80 @@ header a#contactlink:hover:after {
 	content: ' 📞';
 }
 
-header a#aboutlink:hover:after {
-	content: ' ❔';
+header a#backhome:hover:after {
+	content: ' 🏠';
 }
 
-div#pic {
-	/*background: var(--orange);*/
-	background: rgba(255, 165, 0, 0.5);
+div.aboutparagraph {
+	color: white;
+	margin: 0;
+	padding: 1em;
+	transition: all 0.2s ease-in-out;
 }
 
-div#pic img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 600px;
+div.aboutparagraph a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-div#review1 {
-	/*background: var(--yellow);*/
-	background: rgba(255, 255, 0, 0.5);
-}
-
-div#review1 p,
-div#review1 a {
-	color: rgba(0, 0, 0, 0.5);
+div.aboutparagraph a:hover {
+	border-bottom-color: white;
 }
 
 div.textcontainer {
 	margin: auto;
 	max-width: 1000px;
-	width: 90%;
+	width: 80%;
 }
 
-blockquote {
-	font-style: italic;
+div#pic {
+	background: rgba(75, 0, 130, 0.5);
+}
+
+div#pic img {
+	display: block;
 	margin: auto;
-	padding: 2em;
+	max-width: 1000px;
+	width: 100%;
 }
 
-div#review1 blockquote a:hover:after {
-	content: ' 🤗';
-}
-
-div#review2 {
-	/*background: var(--green);*/
-	background: rgba(0, 128, 0, 0.5);
-    text-align: right;
-}
-
-div#review2 blockquote a:hover:after {
-	content: ' 🐻';
-}
-
-div#review3 {
-	/*background: var(--blue);*/
+div#aboutparagraph1 {
 	background: rgba(0, 0, 255, 0.5);
 }
 
-div#review3 blockquote a:hover:after {
-	content: ' 😴';
+div#aboutparagraph2 {
+	background: rgba(0, 128, 0, 0.5);
 }
 
-p.source a {
-	font-size: 80%;
-	font-style: normal;
+div#aboutparagraph3 {
+	background: rgba(255, 255, 0, 0.5);
+	color: black;
+}
+
+div#aboutparagraph3 a,
+div#aboutparagraph4 a {
+	border-bottom: 1px solid darkgray;
+	color: black;
+}
+
+div#aboutparagraph3 a:hover,
+div#aboutparagraph4 a:hover {
+	border-bottom-color: black;
+}
+
+div#aboutparagraph4 {
+	background: rgba(255, 165, 0, 0.5);
+	color: black;
+}
+
+div#aboutparagraph5 {
+	background: rgba(223, 0, 0, 0.50);
+}
+
+div#aboutparagraph6 {
+	background: rgba(190, 104, 190, 0.75);
 }
 
 div#contact {
-	/*background: var(--indigo);*/
 	background: rgba(75, 0, 130, 0.5);
 	font-size: 75%;
 	padding: 2em;
@@ -169,8 +169,7 @@ address {
 }
 
 footer {
-	/*background: var(--violet);*/
-	background: rgba(190, 104, 190, 0.75);
+	background: rgba(0, 0, 255, 0.5);
 	font-size: 75%;
 	text-align: center;
 	min-height: 70vh;
@@ -180,48 +179,6 @@ footer {
 footer p {
 	margin: 1em auto;
 	width: 80%;
-}
-
-p#ROYGBIV {
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-p#ROYGBIV:hover:before,
-p#ROYGBIV:hover:after {
-	content: ' 🤓 ';
-}
-
-footer:hover p#ROYGBIV {
-    opacity: 1;
-}
-
-span#R {
-	color: red;
-}
-
-span#O {
-	color: orange;
-}
-
-span#Y {
-	color: yellow;
-}
-
-span#G {
-	color: green;
-}
-
-span#B {
-	color: blue;
-}
-
-span#I {
-	color: indigo;
-}
-
-span#V {
-	color: violet;
 }
 
 /* ===================================== */
@@ -252,10 +209,6 @@ span#V {
 	div#contact,
 	footer {
 		font-size: initial;
-	}
-
-	header p#tagline {
-		padding-bottom: 1em;
 	}
 
 }
