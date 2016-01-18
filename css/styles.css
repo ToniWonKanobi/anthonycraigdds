@@ -22,6 +22,7 @@ body {
 	font-family: "Whitney SSm A", "Whitney SSm B", Avenir Next, sans-serif;
 	font-size: 200%;
 	font-weight: 300;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 }
@@ -41,6 +42,7 @@ header h1 {
 	font-weight: 700;
 	margin: 0 auto;
 	padding-top: 7vw;
+	max-width: 90%;
 }
 
 header h1 {
