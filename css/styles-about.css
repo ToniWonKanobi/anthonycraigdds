@@ -17,12 +17,12 @@
 /* Desktop & Tablet Displays             */
 /* ===================================== */
 
-html,
 body {
 	color: white;
 	font-family: "Whitney SSm A", "Whitney SSm B", Avenir Next, sans-serif;
-	font-size: 150%;
+	font-size: 200%;
 	font-weight: 300;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 }
@@ -45,8 +45,7 @@ header h1 {
 	max-width: 90%;
 }
 
-header h1:hover:after,
-header h1:focus:after {
+header h1 a:hover:after {
 	content: ' 😎';
 }
 
@@ -116,23 +115,23 @@ div#aboutparagraph2 {
 
 div#aboutparagraph3 {
 	background: rgba(255, 255, 0, 0.5);
-	color: black;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph3 a,
 div#aboutparagraph4 a {
 	border-bottom: 1px solid darkgray;
-	color: black;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph3 a:hover,
 div#aboutparagraph4 a:hover {
-	border-bottom-color: black;
+	border-bottom-color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph4 {
 	background: rgba(255, 165, 0, 0.5);
-	color: black;
+	color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph5 {
@@ -186,17 +185,17 @@ footer p {
 /* ===================================== */
 @media (max-width: 740px) {
 
-	html,
-	body,
-	div#contact,
-	footer {
-		font-size: 1.1em;
+	body {
+		font-size: 1.3em;
 	}
 
 	header h1 {
 		font-size: 8vw;
 	}
 
+	header p#tagline {
+		padding-bottom: 1em;
+	}
 }
 
 /* ===================================== */
@@ -204,11 +203,8 @@ footer p {
 /* ===================================== */
 @media (max-width: 320px) {
 
-	html,
-	body,
-	div#contact,
-	footer {
-		font-size: initial;
+	body {
+		font-size: 1.1em;
 	}
 
 }
