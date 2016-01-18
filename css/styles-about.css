@@ -3,14 +3,14 @@
 /* ===================================== */
 
 /*:root {
-	--red: rgba(223, 0, 0, 0.50);
-	--orange: rgba(255, 165, 0, 0.5);
-	--yellow: rgba(255, 255, 0, 0.5);
-	--green: rgba(0, 128, 0, 0.5);
-	--blue: rgba(0, 0, 255, 0.5);
-	--indigo: rgba(75, 0, 130, 0.5);
-	--violet: rgba(190, 104, 190, 0.75);
 	--lightwhite: rgba(255, 255, 255, 0.5);
+	--violet: rgba(190, 104, 190, 0.75);
+	--indigo: rgba(75, 0, 130, 0.5);
+	--blue: rgba(0, 0, 255, 0.5);
+	--green: rgba(0, 128, 0, 0.5);
+	--yellow: rgba(255, 255, 0, 0.5);
+	--orange: rgba(255, 165, 0, 0.5);
+	--red: rgba(223, 0, 0, 0.50);
 }*/
 
 /* ===================================== */
@@ -34,6 +34,7 @@ a {
 }
 
 header {
+/* 	background: var(--violet); */
 	background: rgba(190, 104, 190, 0.75);
 	text-align: center;
 }
@@ -81,6 +82,7 @@ div.aboutparagraph {
 }
 
 div.aboutparagraph a {
+	/*border-bottom: 1px solid var(--lightwhite);*/
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -95,6 +97,7 @@ div.textcontainer {
 }
 
 div#pic {
+/* 	background: var(--indigo); */
 	background: rgba(75, 0, 130, 0.5);
 }
 
@@ -106,14 +109,17 @@ div#pic img {
 }
 
 div#aboutparagraph1 {
+/* 	background: var(--blue); */
 	background: rgba(0, 0, 255, 0.5);
 }
 
 div#aboutparagraph2 {
+/* 	background: var(--green); */
 	background: rgba(0, 128, 0, 0.5);
 }
 
 div#aboutparagraph3 {
+/* 	background: var(--yellow); */
 	background: rgba(255, 255, 0, 0.5);
 	color: rgba(0, 0, 0, 0.5);
 }
@@ -130,19 +136,23 @@ div#aboutparagraph4 a:hover {
 }
 
 div#aboutparagraph4 {
+/* 	background: var(--orange); */
 	background: rgba(255, 165, 0, 0.5);
 	color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph5 {
+/* 	background: var(--red); */
 	background: rgba(223, 0, 0, 0.50);
 }
 
 div#aboutparagraph6 {
+/* 	background: var(--violet); */
 	background: rgba(190, 104, 190, 0.75);
 }
 
 div#contact {
+/* 	background: var(--indigo); */
 	background: rgba(75, 0, 130, 0.5);
 	font-size: 75%;
 	padding: 2em;
@@ -168,6 +178,7 @@ address {
 }
 
 footer {
+/* 	background: var(--blue); */
 	background: rgba(0, 0, 255, 0.5);
 	font-size: 75%;
 	text-align: center;
