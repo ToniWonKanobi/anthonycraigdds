@@ -88,8 +88,7 @@ div#pic {
 div#pic img {
     display: block;
     margin: auto;
-    width: 100%;
-    max-width: 600px;
+    width: 50%;
 }
 
 div#review1 {
