@@ -1,12 +1,12 @@
 /*:root {
-	--red: rgba(223, 0, 0, 0.50);
-	--orange: rgba(255, 165, 0, 0.5);
-	--yellow: rgba(255, 255, 0, 0.5);
-	--green: rgba(0, 128, 0, 0.5);
-	--blue: rgba(0, 0, 255, 0.5);
-	--indigo: rgba(75, 0, 130, 0.5);
-	--violet: rgba(190, 104, 190, 0.75);
 	--lightwhite: rgba(255, 255, 255, 0.5);
+	--violet: rgba(190, 104, 190, 0.75);
+	--indigo: rgba(75, 0, 130, 0.5);
+	--blue: rgba(0, 0, 255, 0.5);
+	--green: rgba(0, 128, 0, 0.5);
+	--yellow: rgba(255, 255, 0, 0.5);
+	--orange: rgba(255, 165, 0, 0.5);
+	--red: rgba(223, 0, 0, 0.50);
 }*/
 
 body {
@@ -22,11 +22,18 @@ body {
 a {
 	color: white;
 	text-decoration: none;
+	transition: all 0.2s ease-in-out;
 }
 
 header {
 	/*background: var(--red);*/
 	background: rgba(223, 0, 0, 0.50);
+	text-align: center;
+}
+
+body#aboutpage header {
+/* 	background: var(--violet); */
+	background: rgba(190, 104, 190, 0.75);
 	text-align: center;
 }
 
@@ -36,8 +43,19 @@ header h1 {
 	padding-top: 7vw;
 }
 
+body#aboutpage header h1 {
+	font-weight: 700;
+	margin: 0 auto;
+	padding-top: 7vw;
+	max-width: 90%;
+}
+
 header h1:hover:after {
 	content: ' 😷';
+}
+
+body#aboutpage header h1:hover:after {
+	content: ' 😎';
 }
 
 header p#tagline {
@@ -56,12 +74,23 @@ header ul#menu li {
 	margin: 0.5em;
 }
 
-header a#contactlink:hover:after {
-	content: ' 📞';
+body#aboutpage header ul#menu li {
+	display: inline;
+	margin: 0.5em;
 }
+
+
 
 header a#aboutlink:hover:after {
 	content: ' ❔';
+}
+
+body#aboutpage header a#backhome:hover:after {
+	content: ' 🏠';
+}
+
+header a#contactlink:hover:after {
+	content: ' 📞';
 }
 
 div#pic {
@@ -69,10 +98,15 @@ div#pic {
 	background: rgba(255, 165, 0, 0.5);
 }
 
+body#aboutpage div#pic {
+/* 	background: var(--indigo); */
+	background: rgba(75, 0, 130, 0.5);
+}
+
 div#pic img {
-    display: block;
+	display: block;
 	margin: auto;
-    max-width: 600px;
+	max-width: 600px;
 	width: 50%;
 }
 
@@ -104,7 +138,7 @@ div#review1 blockquote a:hover:after {
 div#review2 {
 	/*background: var(--green);*/
 	background: rgba(0, 128, 0, 0.5);
-    text-align: right;
+	text-align: right;
 }
 
 div#review2 blockquote a:hover:after {
@@ -123,6 +157,71 @@ div#review3 blockquote a:hover:after {
 p.source a {
 	font-size: 80%;
 	font-style: normal;
+}
+
+div.aboutparagraph {
+	color: white;
+	margin: 0;
+	padding: 1em;
+	transition: all 0.2s ease-in-out;
+}
+
+div.aboutparagraph a {
+	/*border-bottom: 1px solid var(--lightwhite);*/
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.aboutparagraph a:hover {
+	border-bottom-color: white;
+}
+
+div.textcontainer {
+	margin: auto;
+	max-width: 1000px;
+	width: 80%;
+}
+
+div#aboutparagraph1 {
+/* 	background: var(--blue); */
+	background: rgba(0, 0, 255, 0.5);
+}
+
+div#aboutparagraph2 {
+/* 	background: var(--green); */
+	background: rgba(0, 128, 0, 0.5);
+}
+
+div#aboutparagraph3 {
+/* 	background: var(--yellow); */
+	background: rgba(255, 255, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5);
+}
+
+div#aboutparagraph3 a,
+div#aboutparagraph4 a {
+	border-bottom: 1px solid darkgray;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+div#aboutparagraph3 a:hover,
+div#aboutparagraph4 a:hover {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+div#aboutparagraph4 {
+/* 	background: var(--orange); */
+	background: rgba(255, 165, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5);
+}
+
+div#aboutparagraph5 {
+/* 	background: var(--red); */
+	background: rgba(223, 0, 0, 0.50);
+}
+
+div#aboutparagraph6 {
+/* 	background: var(--violet); */
+	background: rgba(190, 104, 190, 0.75);
 }
 
 div#contact {
@@ -151,6 +250,32 @@ address {
 	font-style: normal;
 }
 
+body#aboutpage div#contact {
+/* 	background: var(--indigo); */
+	background: rgba(75, 0, 130, 0.5);
+	font-size: 75%;
+	padding: 2em;
+	text-align: center;
+}
+
+body#aboutpage div#contact a {
+	color: white;
+}
+
+body#aboutpage div#contact address a span.hidden-text,
+body#aboutpage div#contact p a span.hidden-text {
+	display: none;
+}
+
+body#aboutpage div#contact address a:hover span.hidden-text,
+body#aboutpage div#contact p a:hover span.hidden-text {
+	display: initial;
+}
+
+address {
+	font-style: normal;
+}
+
 footer {
 	/*background: var(--violet);*/
 	background: rgba(190, 104, 190, 0.75);
@@ -160,9 +285,8 @@ footer {
 	padding: 1em 0;
 }
 
-footer p {
-	margin: 1em auto;
-	width: 80%;
+footer:hover p#ROYGBIV {
+    opacity: 1;
 }
 
 p#ROYGBIV {
@@ -175,8 +299,9 @@ p#ROYGBIV:hover:after {
 	content: ' 🤓 ';
 }
 
-footer:hover p#ROYGBIV {
-    opacity: 1;
+body#aboutpage footer {
+/* 	background: var(--blue); */
+	background: rgba(0, 0, 255, 0.5);
 }
 
 span#R {
