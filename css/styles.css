@@ -1,7 +1,3 @@
-/* ===================================== */
-/* Variables (coming soon)               */
-/* ===================================== */
-
 /*:root {
 	--red: rgba(223, 0, 0, 0.50);
 	--orange: rgba(255, 165, 0, 0.5);
@@ -12,10 +8,6 @@
 	--violet: rgba(190, 104, 190, 0.75);
 	--lightwhite: rgba(255, 255, 255, 0.5);
 }*/
-
-/* ===================================== */
-/* Desktop & Tablet Displays             */
-/* ===================================== */
 
 body {
 	color: white;
@@ -42,14 +34,6 @@ header h1 {
 	font-weight: 700;
 	margin: 0 auto;
 	padding-top: 7vw;
-	max-width: 90%;
-}
-
-header h1 {
-	font-weight: 700;
-	margin: 0 auto;
-	padding-top: 7vw;
-	max-width: 90%;
 }
 
 header h1:hover:after {
@@ -59,7 +43,7 @@ header h1:hover:after {
 header p#tagline {
 	font-size: 0.75em;
 	margin: auto;
-	padding: 1em 0 2em 0;
+	padding: 1vw 0 3vw 0;
 }
 
 header ul#menu {
@@ -87,8 +71,9 @@ div#pic {
 
 div#pic img {
     display: block;
-    margin: auto;
-    width: 80%;
+	margin: auto;
+    max-width: 600px;
+	width: 50%;
 }
 
 div#review1 {
@@ -104,7 +89,6 @@ div#review1 a {
 div.textcontainer {
 	margin: auto;
 	max-width: 1000px;
-	width: 90%;
 }
 
 blockquote {
@@ -223,32 +207,27 @@ span#V {
 	color: violet;
 }
 
-/* ===================================== */
-/* Phone Displays                        */
-/* ===================================== */
 @media (max-width: 740px) {
 
 	body {
-		font-size: 1.3em;
+		font-size: 125%;
 	}
-
+	
 	header h1 {
 		font-size: 8vw;
+		padding-top: 12vw;
 	}
 
 	header p#tagline {
 		padding-bottom: 1em;
 	}
-
-}
-
-/* ===================================== */
-/* Smaller Phone Displays                */
-/* ===================================== */
-@media (max-width: 320px) {
-
-	body {
-		font-size: 1.1em;
+	
+	header ul#menu {
+		padding-bottom: 12vw;
+	}
+	
+	div#pic img {
+		width: 100vw;
 	}
 
 }
