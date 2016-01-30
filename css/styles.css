@@ -337,6 +337,40 @@ span#I {
 span#V {
 	color: violet;
 }
+		
+body#pagenotfound {
+	background: blue;
+	font-family: Courier;
+	font-size: initial;
+	font-style: normal;
+	font-weight: initial;
+	margin: 4em auto;
+	max-width: 800px;
+	width: 80%;
+}
+
+body#pagenotfound h2 {
+	display: block;
+	background: white;
+	color: blue;
+	margin: 1em auto 0.5em auto;
+	text-transform: uppercase;
+	text-align: center;
+	width: 290px; /* Not responsive, but who cares? It's a silly, anyways */
+}
+
+body#pagenotfound li {
+	list-style-type: disc;
+}
+
+body#pagenotfound p:last-of-type {
+	margin-top: 2em;
+	text-align: center;
+}
+
+body#pagenotfound a {
+	color: white;
+}
 
 @media (max-width: 740px) {
 
