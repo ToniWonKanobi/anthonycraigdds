@@ -1,4 +1,4 @@
-/*:root {
+:root {
 	--lightwhite: rgba(255, 255, 255, 0.5);
 	--violet: rgba(190, 104, 190, 0.75);
 	--indigo: rgba(75, 0, 130, 0.5);
@@ -7,14 +7,13 @@
 	--yellow: rgba(255, 255, 0, 0.5);
 	--orange: rgba(255, 165, 0, 0.5);
 	--red: rgba(223, 0, 0, 0.50);
-}*/
+}
 
 body {
 	color: white;
-	font-family: "Whitney SSm A", "Whitney SSm B", Avenir Next, sans-serif;
+	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif;
 	font-size: 200%;
 	font-weight: 300;
-	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 }
@@ -26,13 +25,13 @@ a {
 }
 
 header {
-	/*background: var(--red);*/
+	background: var(--red);
 	background: rgba(223, 0, 0, 0.50);
 	text-align: center;
 }
 
 body#aboutpage header {
-/* 	background: var(--violet); */
+	background: var(--violet);
 	background: rgba(190, 104, 190, 0.75);
 	text-align: center;
 }
@@ -50,11 +49,13 @@ body#aboutpage header h1 {
 	max-width: 90%;
 }
 
-header h1:hover:after {
+header h1:hover:after,
+header h1:focus:after {
 	content: ' 😷';
 }
 
-body#aboutpage header h1:hover:after {
+body#aboutpage header h1:hover:after,
+body#aboutpage header h1:focus:after {
 	content: ' 😎';
 }
 
@@ -74,44 +75,40 @@ header ul#menu li {
 	margin: 0.5em;
 }
 
-body#aboutpage header ul#menu li {
-	display: inline;
-	margin: 0.5em;
-}
-
-
-
-header a#aboutlink:hover:after {
+header a#aboutlink:hover:after,
+header a#aboutlink:focus:after {
 	content: ' ❔';
 }
 
-body#aboutpage header a#backhome:hover:after {
+body#aboutpage header a#backhome:hover:after,
+body#aboutpage header a#backhome:focus:after {
 	content: ' 🏠';
 }
 
-header a#contactlink:hover:after {
+header a#contactlink:hover:after,
+header a#contactlink:focus:after {
 	content: ' 📞';
 }
 
 div#pic {
-	/*background: var(--orange);*/
+	background: var(--orange);
 	background: rgba(255, 165, 0, 0.5);
 }
 
 body#aboutpage div#pic {
-/* 	background: var(--indigo); */
+	background: var(--indigo);
 	background: rgba(75, 0, 130, 0.5);
 }
 
 div#pic img {
 	display: block;
 	margin: auto;
-	max-width: 600px;
-	width: 50%;
+	max-width: 1000px;
+	width: calc(80% - 2em);
 }
 
 div#review1 {
-	/*background: var(--yellow);*/
+	background: var(--yellow);
 	background: rgba(255, 255, 0, 0.5);
 }
 
@@ -123,34 +120,38 @@ div#review1 a {
 div.textcontainer {
 	margin: auto;
 	max-width: 1000px;
+	width: 80%;
 }
 
 blockquote {
 	font-style: italic;
 	margin: auto;
-	padding: 2em;
+	padding: 1em;
 }
 
-div#review1 blockquote a:hover:after {
+div#review1 blockquote a:hover:after,
+div#review1 blockquote a:focus:after {
 	content: ' 🤗';
 }
 
 div#review2 {
-	/*background: var(--green);*/
+	background: var(--green);
 	background: rgba(0, 128, 0, 0.5);
 	text-align: right;
 }
 
-div#review2 blockquote a:hover:after {
+div#review2 blockquote a:hover:after,
+div#review2 blockquote a:focus:after {
 	content: ' 🐻';
 }
 
 div#review3 {
-	/*background: var(--blue);*/
+	background: var(--blue);
 	background: rgba(0, 0, 255, 0.5);
 }
 
-div#review3 blockquote a:hover:after {
+div#review3 blockquote a:hover:after,
+div#review3 blockquote a:focus:after {
 	content: ' 😴';
 }
 
@@ -161,38 +162,34 @@ p.source a {
 
 div.aboutparagraph {
 	color: white;
+	line-height: 1.6;
 	margin: 0;
 	padding: 1em;
 	transition: all 0.2s ease-in-out;
 }
 
 div.aboutparagraph a {
-	/*border-bottom: 1px solid var(--lightwhite);*/
+	border-bottom: 1px solid var(--lightwhite);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-div.aboutparagraph a:hover {
+div.aboutparagraph a:hover,
+div.aboutparagraph a:focus {
 	border-bottom-color: white;
 }
 
-div.textcontainer {
-	margin: auto;
-	max-width: 1000px;
-	width: 80%;
-}
-
 div#aboutparagraph1 {
-/* 	background: var(--blue); */
+	background: var(--blue);
 	background: rgba(0, 0, 255, 0.5);
 }
 
 div#aboutparagraph2 {
-/* 	background: var(--green); */
+	background: var(--green);
 	background: rgba(0, 128, 0, 0.5);
 }
 
 div#aboutparagraph3 {
-/* 	background: var(--yellow); */
+	background: var(--yellow);
 	background: rgba(255, 255, 0, 0.5);
 	color: rgba(0, 0, 0, 0.5);
 }
@@ -204,28 +201,30 @@ div#aboutparagraph4 a {
 }
 
 div#aboutparagraph3 a:hover,
-div#aboutparagraph4 a:hover {
+div#aboutparagraph3 a:focus,
+div#aboutparagraph4 a:hover,
+div#aboutparagraph4 a:focus {
 	border-bottom-color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph4 {
-/* 	background: var(--orange); */
+	background: var(--orange);
 	background: rgba(255, 165, 0, 0.5);
 	color: rgba(0, 0, 0, 0.5);
 }
 
 div#aboutparagraph5 {
-/* 	background: var(--red); */
+	background: var(--red);
 	background: rgba(223, 0, 0, 0.50);
 }
 
 div#aboutparagraph6 {
-/* 	background: var(--violet); */
+	background: var(--violet);
 	background: rgba(190, 104, 190, 0.75);
 }
 
 div#contact {
-	/*background: var(--indigo);*/
+	background: var(--indigo);
 	background: rgba(75, 0, 130, 0.5);
 	font-size: 75%;
 	padding: 2em;
@@ -242,7 +241,9 @@ div#contact p a span.hidden-text {
 }
 
 div#contact address a:hover span.hidden-text,
-div#contact p a:hover span.hidden-text {
+div#contact address a:focus span.hidden-text,
+div#contact p a:hover span.hidden-text,
+div#contact p a:focus span.hidden-text {
 	display: initial;
 }
 
@@ -251,7 +252,7 @@ address {
 }
 
 body#aboutpage div#contact {
-/* 	background: var(--indigo); */
+	background: var(--indigo);
 	background: rgba(75, 0, 130, 0.5);
 	font-size: 75%;
 	padding: 2em;
@@ -268,7 +269,9 @@ body#aboutpage div#contact p a span.hidden-text {
 }
 
 body#aboutpage div#contact address a:hover span.hidden-text,
-body#aboutpage div#contact p a:hover span.hidden-text {
+body#aboutpage div#contact address a:focus span.hidden-text,
+body#aboutpage div#contact p a:hover span.hidden-text,
+body#aboutpage div#contact p a:focus span.hidden-text {
 	display: initial;
 }
 
@@ -277,7 +280,7 @@ address {
 }
 
 footer {
-	/*background: var(--violet);*/
+	background: var(--violet);
 	background: rgba(190, 104, 190, 0.75);
 	font-size: 75%;
 	text-align: center;
@@ -285,7 +288,8 @@ footer {
 	padding: 1em 0;
 }
 
-footer:hover p#ROYGBIV {
+footer:hover p#ROYGBIV,
+footer:focus p#ROYGBIV {
     opacity: 1;
 }
 
@@ -295,12 +299,14 @@ p#ROYGBIV {
 }
 
 p#ROYGBIV:hover:before,
-p#ROYGBIV:hover:after {
+p#ROYGBIV:focus:before,
+p#ROYGBIV:hover:after,
+p#ROYGBIV:focus:after {
 	content: ' 🤓 ';
 }
 
 body#aboutpage footer {
-/* 	background: var(--blue); */
+	background: var(--blue);
 	background: rgba(0, 0, 255, 0.5);
 }
 
