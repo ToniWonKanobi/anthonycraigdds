@@ -150,9 +150,20 @@ div#review3 {
 	background: rgba(0, 0, 255, 0.5);
 }
 
+div#review4 {
+	background: var(--indigo);
+	background: rgba(75, 0, 130, 0.5);
+	text-align: right;
+}
+
 div#review3 blockquote a:hover:after,
 div#review3 blockquote a:focus:after {
 	content: ' 😴';
+}
+
+div#review4 blockquote a:hover:after,
+div#review4 blockquote a:focus:after {
+	content: ' 🙂';
 }
 
 p.source a {
@@ -224,8 +235,8 @@ div#aboutparagraph6 {
 }
 
 div#contact {
-	background: var(--indigo);
-	background: rgba(75, 0, 130, 0.5);
+	background: var(--violet);
+	background: rgba(190, 104, 190, 0.75);
 	font-size: 75%;
 	padding: 2em;
 	text-align: center;
@@ -280,8 +291,8 @@ address {
 }
 
 footer {
-	background: var(--violet);
-	background: rgba(190, 104, 190, 0.75);
+	background: var(--red);
+	background: rgba(223, 0, 0, 0.50);
 	font-size: 75%;
 	text-align: center;
 	min-height: 70vh;
@@ -337,7 +348,7 @@ span#I {
 span#V {
 	color: violet;
 }
-		
+
 body#pagenotfound {
 	background: blue;
 	font-family: Courier;
@@ -377,7 +388,7 @@ body#pagenotfound a {
 	body {
 		font-size: 125%;
 	}
-	
+
 	header h1 {
 		font-size: 8vw;
 		padding-top: 12vw;
@@ -386,11 +397,11 @@ body#pagenotfound a {
 	header p#tagline {
 		padding-bottom: 1em;
 	}
-	
+
 	header ul#menu {
 		padding-bottom: 12vw;
 	}
-	
+
 	div#pic img {
 		width: 100vw;
 	}
