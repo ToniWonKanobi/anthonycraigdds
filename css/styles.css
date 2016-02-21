@@ -1,409 +1,254 @@
-:root {
-	--lightwhite: rgba(255, 255, 255, 0.5);
-	--violet: rgba(190, 104, 190, 0.75);
-	--indigo: rgba(75, 0, 130, 0.5);
-	--blue: rgba(0, 0, 255, 0.5);
-	--green: rgba(0, 128, 0, 0.5);
-	--yellow: rgba(255, 255, 0, 0.5);
-	--orange: rgba(255, 165, 0, 0.5);
-	--red: rgba(223, 0, 0, 0.50);
-}
-
+@charset "UTF-8";
 body {
-	color: white;
-	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif;
-	font-size: 200%;
-	font-weight: 300;
-	margin: 0;
-	padding: 0;
-}
+  color: white;
+  font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif;
+  font-size: 200%;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0; }
 
 a {
-	color: white;
-	text-decoration: none;
-	transition: all 0.2s ease-in-out;
-}
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 header {
-	background: var(--red);
-	background: rgba(223, 0, 0, 0.50);
-	text-align: center;
-}
+  background: rgba(223, 0, 0, 0.5);
+  text-align: center; }
+  header h1 {
+    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 5vw; }
+    header h1:hover:after, header h1:focus:after {
+      content: " 😷"; }
+  header p {
+    font-size: 0.75em;
+    margin: auto;
+    padding: 1vw 0 1vw 0; }
+  header ul {
+    margin: auto;
+    padding: 1vw 0 5vw 0; }
+    header ul li {
+      display: inline;
+      margin: 0.5em; }
+      header ul li a#aboutlink:hover:after, header ul li a#aboutlink:focus:after {
+        content: " ❔"; }
+      header ul li a#contactlink:hover:after, header ul li a#contactlink:focus:after {
+        content: " 📞"; }
 
-body#aboutpage header {
-	background: var(--violet);
-	background: rgba(190, 104, 190, 0.75);
-	text-align: center;
-}
-
-header h1 {
-	font-weight: 700;
-	margin: 0 auto;
-	padding-top: 7vw;
-}
-
-body#aboutpage header h1 {
-	font-weight: 700;
-	margin: 0 auto;
-	padding-top: 7vw;
-	max-width: 90%;
-}
-
-header h1:hover:after,
-header h1:focus:after {
-	content: ' 😷';
-}
-
-body#aboutpage header h1:hover:after,
-body#aboutpage header h1:focus:after {
-	content: ' 😎';
-}
-
-header p#tagline {
-	font-size: 0.75em;
-	margin: auto;
-	padding: 1vw 0 3vw 0;
-}
-
-header ul#menu {
-	margin: auto;
-	padding: 1vw 0 7vw 0;
-}
-
-header ul#menu li {
-	display: inline;
-	margin: 0.5em;
-}
-
-header a#aboutlink:hover:after,
-header a#aboutlink:focus:after {
-	content: ' ❔';
-}
-
-body#aboutpage header a#backhome:hover:after,
-body#aboutpage header a#backhome:focus:after {
-	content: ' 🏠';
-}
-
-header a#contactlink:hover:after,
-header a#contactlink:focus:after {
-	content: ' 📞';
-}
-
-div#pic {
-	background: var(--orange);
-	background: rgba(255, 165, 0, 0.5);
-}
-
-body#aboutpage div#pic {
-	background: var(--indigo);
-	background: rgba(75, 0, 130, 0.5);
-}
-
-div#pic img {
-	display: block;
-	margin: auto;
-	max-width: 1000px;
-	width: calc(80% - 2em);
-}
-
-div#review1 {
-	background: var(--yellow);
-	background: rgba(255, 255, 0, 0.5);
-}
-
-div#review1 p,
-div#review1 a {
-	color: rgba(0, 0, 0, 0.5);
-}
-
-div.textcontainer {
-	margin: auto;
-	max-width: 1000px;
-	width: 80%;
-}
+.text-container {
+  margin: auto;
+  max-width: 800px;
+  width: 80%; }
 
 blockquote {
-	font-style: italic;
-	margin: auto;
-	padding: 1em;
-}
+  font-style: italic;
+  margin: auto;
+  padding: 1em; }
+  blockquote p.source a {
+    font-size: 80%;
+    font-style: normal; }
 
-div#review1 blockquote a:hover:after,
-div#review1 blockquote a:focus:after {
-	content: ' 🤗';
-}
+#pic {
+  background: rgba(255, 165, 0, 0.5); }
+  #pic img {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    width: calc(80% - 2em); }
 
-div#review2 {
-	background: var(--green);
-	background: rgba(0, 128, 0, 0.5);
-	text-align: right;
-}
+#review-1 {
+  background: rgba(255, 255, 0, 0.5); }
+  #review-1 p, #review-1 a {
+    color: rgba(0, 0, 0, 0.5); }
+  #review-1 blockquote a:hover:after, #review-1 blockquote a:focus:after {
+    content: " 👌🏿"; }
 
-div#review2 blockquote a:hover:after,
-div#review2 blockquote a:focus:after {
-	content: ' 🐻';
-}
+#review-2 {
+  background: rgba(0, 128, 0, 0.5);
+  text-align: right; }
+  #review-2 blockquote a:hover:after, #review-2 blockquote a:focus:after {
+    content: " 👨‍👩‍👧‍👦"; }
 
-div#review3 {
-	background: var(--blue);
-	background: rgba(0, 0, 255, 0.5);
-}
+#review-3 {
+  background: rgba(0, 0, 255, 0.5); }
+  #review-3 blockquote a:hover:after, #review-3 blockquote a:focus:after {
+    content: " 🐻"; }
 
-div#review4 {
-	background: var(--indigo);
-	background: rgba(75, 0, 130, 0.5);
-	text-align: right;
-}
+#review-4 {
+  background: rgba(75, 0, 130, 0.5);
+  text-align: right; }
+  #review-4 blockquote a:hover:after, #review-4 blockquote a:focus:after {
+    content: " ☺️"; }
 
-div#review3 blockquote a:hover:after,
-div#review3 blockquote a:focus:after {
-	content: ' 😴';
-}
+#review-5 {
+  background: rgba(190, 104, 190, 0.75); }
+  #review-5 blockquote a:hover:after, #review-5 blockquote a:focus:after {
+    content: " 😴"; }
 
-div#review4 blockquote a:hover:after,
-div#review4 blockquote a:focus:after {
-	content: ' 🙂';
-}
-
-p.source a {
-	font-size: 80%;
-	font-style: normal;
-}
-
-div.aboutparagraph {
-	color: white;
-	line-height: 1.6;
-	margin: 0;
-	padding: 1em;
-	transition: all 0.2s ease-in-out;
-}
-
-div.aboutparagraph a {
-	border-bottom: 1px solid var(--lightwhite);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-div.aboutparagraph a:hover,
-div.aboutparagraph a:focus {
-	border-bottom-color: white;
-}
-
-div#aboutparagraph1 {
-	background: var(--blue);
-	background: rgba(0, 0, 255, 0.5);
-}
-
-div#aboutparagraph2 {
-	background: var(--green);
-	background: rgba(0, 128, 0, 0.5);
-}
-
-div#aboutparagraph3 {
-	background: var(--yellow);
-	background: rgba(255, 255, 0, 0.5);
-	color: rgba(0, 0, 0, 0.5);
-}
-
-div#aboutparagraph3 a,
-div#aboutparagraph4 a {
-	border-bottom: 1px solid darkgray;
-	color: rgba(0, 0, 0, 0.5);
-}
-
-div#aboutparagraph3 a:hover,
-div#aboutparagraph3 a:focus,
-div#aboutparagraph4 a:hover,
-div#aboutparagraph4 a:focus {
-	border-bottom-color: rgba(0, 0, 0, 0.5);
-}
-
-div#aboutparagraph4 {
-	background: var(--orange);
-	background: rgba(255, 165, 0, 0.5);
-	color: rgba(0, 0, 0, 0.5);
-}
-
-div#aboutparagraph5 {
-	background: var(--red);
-	background: rgba(223, 0, 0, 0.50);
-}
-
-div#aboutparagraph6 {
-	background: var(--violet);
-	background: rgba(190, 104, 190, 0.75);
-}
-
-div#contact {
-	background: var(--violet);
-	background: rgba(190, 104, 190, 0.75);
-	font-size: 75%;
-	padding: 2em;
-	text-align: center;
-}
-
-div#contact a {
-	color: white;
-}
-
-div#contact address a span.hidden-text,
-div#contact p a span.hidden-text {
-	display: none;
-}
-
-div#contact address a:hover span.hidden-text,
-div#contact address a:focus span.hidden-text,
-div#contact p a:hover span.hidden-text,
-div#contact p a:focus span.hidden-text {
-	display: initial;
-}
-
-address {
-	font-style: normal;
-}
-
-body#aboutpage div#contact {
-	background: var(--indigo);
-	background: rgba(75, 0, 130, 0.5);
-	font-size: 75%;
-	padding: 2em;
-	text-align: center;
-}
-
-body#aboutpage div#contact a {
-	color: white;
-}
-
-body#aboutpage div#contact address a span.hidden-text,
-body#aboutpage div#contact p a span.hidden-text {
-	display: none;
-}
-
-body#aboutpage div#contact address a:hover span.hidden-text,
-body#aboutpage div#contact address a:focus span.hidden-text,
-body#aboutpage div#contact p a:hover span.hidden-text,
-body#aboutpage div#contact p a:focus span.hidden-text {
-	display: initial;
-}
-
-address {
-	font-style: normal;
-}
+#contact {
+  background: rgba(223, 0, 0, 0.5);
+  font-size: 75%;
+  padding: 2em;
+  text-align: center; }
+  #contact span.hidden-text {
+    display: none; }
+  #contact a {
+    color: white; }
+    #contact a:hover span.hidden-text, #contact a:focus span.hidden-text {
+      display: initial; }
+  #contact address {
+    font-style: normal; }
 
 footer {
-	background: var(--red);
-	background: rgba(223, 0, 0, 0.50);
-	font-size: 75%;
-	text-align: center;
-	min-height: 70vh;
-	padding: 1em 0;
-}
-
-footer:hover p#ROYGBIV,
-footer:focus p#ROYGBIV {
-    opacity: 1;
-}
-
-p#ROYGBIV {
+  background: rgba(255, 165, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 75%;
+  text-align: center;
+  min-height: 20vh;
+  padding: 1em 0; }
+  footer:hover p#ROYGBIV, footer:focus p#ROYGBIV {
+    opacity: 1; }
+  footer a {
+    color: rgba(0, 0, 0, 0.5); }
+  footer p#ROYGBIV {
     opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-p#ROYGBIV:hover:before,
-p#ROYGBIV:focus:before,
-p#ROYGBIV:hover:after,
-p#ROYGBIV:focus:after {
-	content: ' 🤓 ';
-}
-
-body#aboutpage footer {
-	background: var(--blue);
-	background: rgba(0, 0, 255, 0.5);
-}
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    footer p#ROYGBIV:hover:before, footer p#ROYGBIV:focus:before, footer p#ROYGBIV:hover:after, footer p#ROYGBIV:focus:after {
+      content: " 🤓 "; }
 
 span#R {
-	color: red;
-}
+  color: red; }
 
 span#O {
-	color: orange;
-}
+  color: orange; }
 
 span#Y {
-	color: yellow;
-}
+  color: yellow; }
 
 span#G {
-	color: green;
-}
+  color: green; }
 
 span#B {
-	color: blue;
-}
+  color: blue; }
 
 span#I {
-	color: indigo;
-}
+  color: indigo; }
 
 span#V {
-	color: violet;
-}
-
-body#pagenotfound {
-	background: blue;
-	font-family: Courier;
-	font-size: initial;
-	font-style: normal;
-	font-weight: initial;
-	margin: 4em auto;
-	max-width: 800px;
-	width: 80%;
-}
-
-body#pagenotfound h2 {
-	display: block;
-	background: white;
-	color: blue;
-	margin: 1em auto 0.5em auto;
-	text-transform: uppercase;
-	text-align: center;
-	width: 290px; /* Not responsive, but who cares? It's a silly, anyways */
-}
-
-body#pagenotfound li {
-	list-style-type: disc;
-}
-
-body#pagenotfound p:last-of-type {
-	margin-top: 2em;
-	text-align: center;
-}
-
-body#pagenotfound a {
-	color: white;
-}
+  color: violet; }
 
 @media (max-width: 740px) {
+  body {
+    font-size: 125%; }
 
-	body {
-		font-size: 125%;
-	}
+  header h1 {
+    font-size: 8vw;
+    padding-top: 12vw; }
+  header p {
+    padding-bottom: 1em; }
+  header ul {
+    padding-bottom: 12vw; }
 
-	header h1 {
-		font-size: 8vw;
-		padding-top: 12vw;
-	}
+  #pic img {
+    width: 100vw; } }
+body#aboutpage header {
+  background: rgba(190, 104, 190, 0.75); }
+body#aboutpage h1 {
+  font-weight: 700;
+  margin: 0 auto;
+  padding-top: 5vw;
+  max-width: 90%; }
+  body#aboutpage h1:hover:after, body#aboutpage h1:focus:after {
+    content: " 😎"; }
+body#aboutpage ul li a#backhome:hover:after, body#aboutpage ul li a#backhome:focus:after {
+  content: " 🏠"; }
+body#aboutpage ul li a#contactlink:hover:after, body#aboutpage ul li a#contactlink:focus:after {
+  content: " 📞"; }
+body#aboutpage #pic {
+  background: rgba(75, 0, 130, 0.5); }
+body#aboutpage .about-paragraph {
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  body#aboutpage .about-paragraph a {
+    color: white;
+    border-bottom: 0.05em solid #cccccc;
+    padding-bottom: 0.05em; }
+    body#aboutpage .about-paragraph a:hover, body#aboutpage .about-paragraph a:focus {
+      border-bottom-color: white; }
+body#aboutpage #about-paragraph-1 {
+  background: rgba(0, 0, 255, 0.5); }
+body#aboutpage #about-paragraph-2 {
+  background: rgba(0, 128, 0, 0.5); }
+body#aboutpage #about-paragraph-3 {
+  background: rgba(255, 255, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5); }
+body#aboutpage #about-paragraph-4 {
+  background: rgba(255, 165, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5); }
+body#aboutpage #about-paragraph-3 a, body#aboutpage #about-paragraph-4 a {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 0.05em solid rgba(191, 191, 191, 0.5);
+  padding-bottom: 0.05em; }
+  body#aboutpage #about-paragraph-3 a:hover, body#aboutpage #about-paragraph-3 a:focus, body#aboutpage #about-paragraph-4 a:hover, body#aboutpage #about-paragraph-4 a:focus {
+    border-bottom-color: rgba(0, 0, 0, 0.5); }
+body#aboutpage #about-paragraph-5 {
+  background: rgba(223, 0, 0, 0.5); }
+body#aboutpage #about-paragraph-6 {
+  background: rgba(190, 104, 190, 0.75); }
+body#aboutpage #contact {
+  background: rgba(75, 0, 130, 0.5);
+  font-size: 75%;
+  padding: 2em;
+  text-align: center; }
+  body#aboutpage #contact span.hidden-text {
+    display: none; }
+  body#aboutpage #contact a {
+    color: white; }
+    body#aboutpage #contact a:hover span.hidden-text, body#aboutpage #contact a:focus span.hidden-text {
+      display: initial; }
+body#aboutpage footer {
+  background: rgba(0, 0, 255, 0.5);
+  color: white; }
+  body#aboutpage footer a {
+    color: white; }
 
-	header p#tagline {
-		padding-bottom: 1em;
-	}
-
-	header ul#menu {
-		padding-bottom: 12vw;
-	}
-
-	div#pic img {
-		width: 100vw;
-	}
-
-}
+body#pagenotfound {
+  background: blue;
+  font-family: Courier;
+  font-size: initial;
+  font-style: normal;
+  font-weight: initial;
+  margin: 4em auto;
+  max-width: 800px;
+  width: 80%;
+  line-height: 1.4; }
+  body#pagenotfound main {
+    padding-top: 10vw; }
+  body#pagenotfound h2 {
+    display: block;
+    background: white;
+    color: blue;
+    margin: 1em auto 0.5em auto;
+    text-transform: uppercase;
+    text-align: center;
+    width: 290px; }
+  body#pagenotfound li {
+    list-style-type: disc; }
+  body#pagenotfound p:last-of-type {
+    margin-top: 2em;
+    text-align: center; }
+  body#pagenotfound a {
+    color: white;
+    text-decoration: underline; }
+  @media (max-width: 740px) {
+    body#pagenotfound h2 {
+      max-width: 90%;
+      font-size: 6vw; } }

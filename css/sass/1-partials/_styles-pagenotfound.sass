@@ -1,0 +1,40 @@
+body#pagenotfound
+	background: blue
+	font-family: Courier
+	font-size: initial
+	font-style: normal
+	font-weight: initial
+	margin: 4em auto
+	max-width: 800px
+	width: 80%
+	line-height: 1.4
+
+	main
+		padding-top: 10vw
+
+	h2
+		display: block
+		background: white
+		color: blue
+		margin: 1em auto 0.5em auto
+		text-transform: uppercase
+		text-align: center
+
+		// Not responsive, but who cares? It's a silly, anyways
+		width: 290px
+
+	li
+		list-style-type: disc
+
+	p:last-of-type
+		margin-top: 2em
+		text-align: center
+
+	a
+		color: white
+		text-decoration: underline
+
+	@media (max-width: 740px)
+		h2
+			max-width: 90%
+			font-size: 6vw

@@ -1,0 +1,89 @@
+body#aboutpage
+	header
+		background: $violet
+
+	h1
+		font-weight: 700
+		margin: 0 auto
+		padding-top: 5vw
+		max-width: 90%
+
+		&:hover:after, &:focus:after
+			content: ' 😎'
+
+	ul
+		li
+			a#backhome:hover:after, a#backhome:focus:after
+				content: ' 🏠'
+
+			a#contactlink:hover:after, a#contactlink:focus:after
+				content: ' 📞'
+
+	#pic
+		background: $indigo
+
+	.about-paragraph
+		color: white
+		line-height: 1.6
+		margin: 0
+		padding: 1em
+		+transition(all 0.2s ease-in-out)
+
+		a
+			color: white
+			border-bottom: 0.05em solid darken(white, 20%)
+			padding-bottom: 0.05em
+
+			&:hover, &:focus
+				border-bottom-color: white
+
+	#about-paragraph-1
+		background: $blue
+
+	#about-paragraph-2
+		background: $green
+
+	#about-paragraph-3
+		background: $yellow
+		color: $gray
+
+	#about-paragraph-4
+		background: $orange
+		color: $gray
+
+	#about-paragraph-3, #about-paragraph-4
+		a
+			color: $gray
+			border-bottom: 0.05em solid lighten($gray, 75%)
+			padding-bottom: 0.05em
+
+			&:hover, &:focus
+				border-bottom-color: $gray
+
+	#about-paragraph-5
+		background: $red
+
+	#about-paragraph-6
+		background: $violet
+
+	#contact
+		background: $indigo
+		font-size: 75%
+		padding: 2em
+		text-align: center
+
+		span.hidden-text
+			display: none
+
+		a
+			color: white
+
+			&:hover span.hidden-text, &:focus span.hidden-text
+				display: initial
+
+	footer
+		background: $blue
+		color: white
+
+		a
+			color: white

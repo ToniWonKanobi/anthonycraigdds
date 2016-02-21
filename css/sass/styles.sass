@@ -1,0 +1,202 @@
+@import 0-tools/_tools-index
+
+$red: rgba(223, 0, 0, 0.5)
+$orange: rgba(255, 165, 0, 0.5)
+$yellow: rgba(255, 255, 0, 0.5)
+$green: rgba(0, 128, 0, 0.5)
+$blue: rgba(0, 0, 255, 0.5)
+$indigo: rgba(75, 0, 130, 0.5)
+$violet: rgba(190, 104, 190, 0.75)
+$gray: rgba(0,0,0,0.5)
+
+body
+	color: white
+	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif
+	font-size: 200%
+	font-weight: 300
+	line-height: 1.5
+	margin: 0
+	padding: 0
+
+a
+	color: white
+	text-decoration: none
+	+transition(all 0.2s ease-in-out)
+
+header
+	background: $red
+	text-align: center
+
+	h1
+		font-weight: 700
+		margin: 0 auto
+		padding-top: 5vw
+
+		&:hover:after, &:focus:after
+			content: ' 😷'
+
+	p
+		font-size: 0.75em
+		margin: auto
+		padding: 1vw 0 1vw 0
+
+	ul
+		margin: auto
+		padding: 1vw 0 5vw 0
+
+		li
+			display: inline
+			margin: 0.5em
+
+			a#aboutlink:hover:after, a#aboutlink:focus:after
+				content: ' ❔'
+
+			a#contactlink:hover:after, a#contactlink:focus:after
+				content: ' 📞'
+
+.text-container
+	margin: auto
+	max-width: 800px
+	width: 80%
+
+blockquote
+	font-style: italic
+	margin: auto
+	padding: 1em
+
+	p.source
+		a
+			font-size: 80%
+			font-style: normal
+
+#pic
+	background: $orange
+
+	img
+		display: block
+		margin: auto
+		max-width: 800px
+		width: calc(80% - 2em)
+
+#review-1
+	background: $yellow
+
+	p, a
+		color: $gray
+
+	blockquote
+		a:hover:after, a:focus:after
+			content: ' 👌🏿'
+
+#review-2
+	background: $green
+	text-align: right
+
+	blockquote
+		a:hover:after, a:focus:after
+			content: ' 👨‍👩‍👧‍👦'
+
+#review-3
+	background: $blue
+
+	blockquote
+		a:hover:after, a:focus:after
+			content: ' 🐻'
+
+#review-4
+	background: $indigo
+	text-align: right
+
+	blockquote
+		a:hover:after, a:focus:after
+			content: ' ☺️'
+
+#review-5
+	background: $violet
+
+	blockquote
+		a:hover:after, a:focus:after
+			content: ' 😴'
+
+#contact
+	background: $red
+	font-size: 75%
+	padding: 2em
+	text-align: center
+
+	span.hidden-text
+		display: none
+
+	a
+		color: white
+
+		&:hover span.hidden-text, &:focus span.hidden-text
+			display: initial
+
+	address
+		font-style: normal
+
+footer
+	background: $orange
+	color: $gray
+	font-size: 75%
+	text-align: center
+	min-height: 20vh
+	padding: 1em 0
+
+	&:hover p#ROYGBIV, &:focus p#ROYGBIV
+		opacity: 1
+
+	a
+		color: $gray
+
+	p#ROYGBIV
+		opacity: 0
+		+transition(all 0.2s ease-in-out)
+
+		&:hover:before, &:focus:before,
+		&:hover:after, &:focus:after
+			content: ' 🤓 '
+
+span#R
+	color: red
+
+span#O
+	color: orange
+
+span#Y
+	color: yellow
+
+span#G
+	color: green
+
+span#B
+	color: blue
+
+span#I
+	color: indigo
+
+span#V
+	color: violet
+
+@media (max-width: 740px)
+	body
+		font-size: 125%
+
+	header
+		h1
+			font-size: 8vw
+			padding-top: 12vw
+
+		p
+			padding-bottom: 1em
+
+		ul
+			padding-bottom: 12vw
+
+	#pic
+		img
+			width: 100vw
+
+@import 1-partials/_styles-about
+@import 1-partials/_styles-pagenotfound

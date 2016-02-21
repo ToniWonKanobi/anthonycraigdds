@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Dr. Anthony Craig
+		meta(name="description" content="Dr. Anthony Craig is ready take care of your dental needs with compassion. Call today!")
+		meta(name="keywords" content="dentistry, teeth, doctor, dental")
+		include partials/_favicons
+
+		// Open Graph and Twitter Cards
+		meta(property="og:locale" content="en_US")
+		meta(property="og:site_name" content="Anthony Craig, DDS")
+		meta(property="og:type" content="website")
+		meta(property="og:title" content="Anthony Craig, DDS")
+		meta(property="article:author" content="https://www.facebook.com/toniwonkanobi")
+		meta(property="og:description" content="Dr. Anthony Craig is ready take care of your dental needs. Call today!")
+		meta(property="og:image" content="images/AnthonyCraigDDS.jpg")
+		meta(name="twitter:site" content="@anthonycraigdds")
+		meta(name="twitter:creator" content="@anthonycraigdds")
+		meta(name="twitter:title" content="Anthony Craig, DDS")
+		meta(name="twitter:card" content="summary")
+		meta(name="twitter:description" content="Dr. Anthony Craig is ready take care of your dental needs with compassion. Call today!")
+		meta(name="twitter:image" content="AnthonyCraigDDS.jpg")
+
+		// Stylesheets
+		include partials/_stylesheets
+
+		// Google Analytics
+		include partials/_google-analytics
+		
+	body
+		header
+			h1
+				a(href="/" rel="author" title="Homepage") Anthony Craig, DDS
+				
+			p Compassionate and friendly dental care
+			
+			ul
+				li: a#aboutlink(rel="about" href="/about" title="Go to page with personal information") About
+				li: a#contactlink(href="#contact" title="Go to section with contact information") Contact
+					
+		main
+			#pic
+				img(src="images/AnthonyCraigDDS-square.jpg")
+				
+			#review-1
+				.text-container
+					blockquote
+						p.quote The genuine kindness, compassion, respectful, and calming nature comes naturally and is very welcoming. Dr. Craig and his team are amazing!
+						p.source &mdash; 
+							cite
+								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=GS2xqO0BeKerZ7qmVBiDTg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Michelle's review") Michelle J.
+
+			#review-2
+				.text-container
+					blockquote
+						p.quote Treats you like family and shows a genuine interest in not just your teeth, but you as a person
+						p.source &mdash; 
+							cite
+								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=aeFQx7MvlmuL3rkrL_NZlw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Kimberly's review") Kimberly L.
+			
+			#review-3
+				.text-container
+					blockquote
+						p.quote Dr. Craig really cares about you as a person
+						p.source &mdash;
+							cite
+								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=mvdbsjd3TSWRIKzsKzq05g" title="Link to Ken's review") Kenneth C.
+
+			#review-4
+				.text-container
+					blockquote
+						p.quote After 13 years between dental visits, I cannot express how happy I am with Dr. Anthony Craig
+						p.source &mdash; 
+							cite
+								a(href="http://d.pr/i/1fJUR" title="Link to Shawn's review") Shawn G.
+
+			#review-5
+				.text-container
+					blockquote
+						p.quote I don't mind going to the dentist anymore. He really made me feel comfortable and relaxed
+						p.source &mdash; 
+							cite
+								a(href="http://d.pr/i/15RcH" title="Link to Crystal's review") Crystal R.
+
+			include partials/_contact
+
+		include partials/_footer
+			p#ROYGBIV
+				a(href="https://en.wikipedia.org/wiki/ROYGBIV" title="Wikipedia: ROYGBIV")
+					span#R R
+					span#O O
+					span#Y Y
+					span#G G
+					span#B B
+					span#I I
+					span#V V
