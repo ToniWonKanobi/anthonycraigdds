@@ -1,5 +1,3 @@
-@import 0-tools/_tools-index
-
 $red: rgba(223, 0, 0, 0.5)
 $orange: rgba(255, 165, 0, 0.5)
 $yellow: rgba(255, 255, 0, 0.5)
@@ -21,7 +19,7 @@ body
 a
 	color: white
 	text-decoration: none
-	+transition(all 0.2s ease-in-out)
+	transition: all 0.2s ease-in-out
 
 header
 	background: $red
@@ -152,7 +150,7 @@ footer
 
 	p#ROYGBIV
 		opacity: 0
-		+transition(all 0.2s ease-in-out)
+		transition: all 0.2s ease-in-out
 
 		&:hover:before, &:focus:before,
 		&:hover:after, &:focus:after
@@ -179,24 +177,4 @@ span#I
 span#V
 	color: violet
 
-@media (max-width: 740px)
-	body
-		font-size: 125%
-
-	header
-		h1
-			font-size: 8vw
-			padding-top: 12vw
-
-		p
-			padding-bottom: 1em
-
-		ul
-			padding-bottom: 12vw
-
-	#pic
-		img
-			width: 100vw
-
-@import 1-partials/_styles-about
-@import 1-partials/_styles-pagenotfound
+@import partials/_partials-index
