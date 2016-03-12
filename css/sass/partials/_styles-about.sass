@@ -1,11 +1,16 @@
 body#about
 	header
 		background: $violet
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
 		height: 400px
+		max-height: 50vh
 
 	h1
 		max-width: 90%
-		text-align: center
+		margin: auto
 
 		&:hover:after, &:focus:after
 			content: ' 😎'

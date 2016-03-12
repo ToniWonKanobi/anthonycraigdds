@@ -28,6 +28,7 @@ header
 	align-items: center
 	flex-direction: column
 	height: 100vh
+	text-align: center
 
 	h1
 		font-weight: 700
@@ -55,61 +56,21 @@ header
 			a#contactlink:hover:after, a#contactlink:focus:after
 				content: ' 📞'
 
-.arrow
-	height: 0
-	width: 0
-	margin: 1em 0
-
-	// So, borders are triangle spaces, because who knows
-	border-left: 20px solid transparent
-	border-right: 20px solid transparent
-	border-top: 20px solid white
-
-	// Tied to the `@keyframes bounce`
-	animation: bounce 1.75s infinite
-	transition: border 150ms ease-in-out, transform 300ms ease-in
-
-	&:hover, &:focus
-		border-top: 20px solid darken(white,5%)
-		transform: rotateZ(360deg)
-
-// Tied to the animation property above
-@keyframes bounce
-	0%
-		transform: translateY(0)
-	10%
-		transform: translateY(-50%)
-	20%
-		transform: translateY(0)
-	30%
-		transform: translateY(-25%)
-	40%
-		transform: translateY(0)
-	50%
-		transform: translateY(-10%)
-
-	// Threw in the `0` state because I forgot how to do an animation delay with a repeat
-	60%
-		transform: translateY(0)
-	70%
-		transform: translateY(0)
-	80%
-		transform: translateY(0)
-	100%
-		transform: translateY(0)
-
 .container
 	min-height: 40vh
 	display: flex
 	align-items: center
 	justify-content: center
 	flex-direction: column
-	// padding: 1em
+
+	&:hover .text-container, &:focus .text-container
+		transform: scale(1.1)
 
 .text-container
 	margin: auto
 	max-width: 800px
 	width: 80%
+	transition: transform 200ms ease-in-out
 
 blockquote
 	font-style: italic

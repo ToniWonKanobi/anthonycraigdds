@@ -1,0 +1,81 @@
+.slide-in-right
+	animation: slide-in-right 2s
+
+@keyframes slide-in-right
+	0%
+		transform: translateX(-100vw)
+		opacity: 0
+	50%
+		transform: translateX(10vw)
+		opacity: 50%
+	100%
+		transform: translateX(0)
+		opacity: 1
+
+.slide-in-left
+	animation: slide-in-left 2s
+
+@keyframes slide-in-left
+	0%
+		transform: translateX(100vw)
+		opacity: 0
+	50%
+		transform: translateX(-10vw)
+		opacity: 50%
+	100%
+		transform: translateX(0)
+		opacity: 1
+
+.arrow
+	height: 0
+	width: 0
+	margin: 1em 0
+
+	// So, borders are triangle spaces, because who knows
+	border-left: 20px solid transparent
+	border-right: 20px solid transparent
+	border-top: 20px solid white
+
+	// Tied to the `@keyframes bounce`
+	animation: bounce 1.75s infinite
+	transition: border 150ms ease-in-out, transform 300ms ease-in
+
+	&:hover, &:focus
+		border-top: 20px solid darken(white,5%)
+		transform: rotateZ(360deg)
+
+// Tied to the animation property above
+@keyframes bounce
+	0%
+		transform: translateY(0)
+	10%
+		transform: translateY(-50%)
+	20%
+		transform: translateY(0)
+	30%
+		transform: translateY(-25%)
+	40%
+		transform: translateY(0)
+	50%
+		transform: translateY(-10%)
+
+	// Threw in the `0` state because I forgot how to do an animation delay with a repeat
+	60%
+		transform: translateY(0)
+	70%
+		transform: translateY(0)
+	80%
+		transform: translateY(0)
+	100%
+		transform: translateY(0)
+
+.slide-down
+	animation: slide-down 1s
+
+@keyframes slide-down
+	from
+		transform: translateY(-200px)
+		opacity: 0
+	to
+		transform: translateY(0)
+		opacity: 1
