@@ -98,6 +98,14 @@ header
 	100%
 		transform: translateY(0)
 
+.container
+	min-height: 40vh
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	// padding: 1em
+
 .text-container
 	margin: auto
 	max-width: 800px
@@ -106,7 +114,6 @@ header
 blockquote
 	font-style: italic
 	margin: auto
-	padding: 1em
 
 	p.source
 		a
@@ -165,7 +172,6 @@ blockquote
 #contact
 	background: $red
 	font-size: 75%
-	padding: 2em
 	text-align: center
 
 	span.hidden-text
@@ -178,6 +184,7 @@ blockquote
 			display: initial
 
 	address
+		margin: 1em auto
 		font-style: normal
 
 footer
@@ -186,7 +193,6 @@ footer
 	font-size: 75%
 	text-align: center
 	min-height: 20vh
-	padding: 1em 0
 
 	&:hover p.roygbiv, &:focus p.roygbiv
 		opacity: 1

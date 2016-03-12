@@ -4,8 +4,6 @@ body#about
 		height: 400px
 
 	h1
-		font-weight: 700
-		margin: 0 auto
 		max-width: 90%
 		text-align: center
 
@@ -17,9 +15,6 @@ body#about
 			a#backhome:hover:after, a#backhome:focus:after
 				content: ' 🏠'
 
-			a#contactlink:hover:after, a#contactlink:focus:after
-				content: ' 📞'
-
 	#pic
 		background: $indigo
 
@@ -27,7 +22,6 @@ body#about
 		color: white
 		line-height: 1.6
 		margin: 0
-		padding: 1em
 		transition: all 0.2s ease-in-out
 
 		a
@@ -69,18 +63,6 @@ body#about
 
 	#contact
 		background: $indigo
-		font-size: 75%
-		padding: 2em
-		text-align: center
-
-		span.hidden-text
-			display: none
-
-		a
-			color: white
-
-			&:hover span.hidden-text, &:focus span.hidden-text
-				display: initial
 
 	footer
 		background: $blue
