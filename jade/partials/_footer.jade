@@ -1,7 +1,8 @@
-footer.container
-	p Copyright &copy; 2015
-		// Auto-updating year from http://stackoverflow.com/a/25415233
-		include _updating-year
+// Non-semantic because it would be too complicated to apply
+// the background colors if <footer> was outside of <main>
+// (which it should be), so I had to go <div> soup
+.footer.container.color
+	p Copyright &copy; 2015&ndash;2016 
 		a(href="http://anthonycraig.me" title="Site's creator") Anthony Craig
 
 	p.roygbiv

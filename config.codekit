@@ -425,7 +425,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 660528,
+		"initialSize": 588410,
 		"inputAbbreviatedPath": "\/images\/us.jpg",
 		"outputAbbreviatedPath": "\/images\/us.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -525,17 +525,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/_stylesheets.jade",
 		"outputAbbreviatedPath": "\/jade\/partials\/_stylesheets.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/jade\/partials\/_updating-year.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/partials\/_updating-year.jade",
-		"outputAbbreviatedPath": "\/jade\/partials\/_updating-year.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0

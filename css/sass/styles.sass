@@ -21,8 +21,7 @@ a
 	text-decoration: none
 	transition: all 0.2s ease-in-out
 
-header
-	background: $red
+.top
 	display: flex
 	justify-content: center
 	align-items: center
@@ -30,32 +29,68 @@ header
 	height: 100vh
 	text-align: center
 
-	h1
-		font-weight: 700
-		margin: 0
+h1.title
+	font-weight: 700
+	margin: 0
 
-		&:hover:after, &:focus:after
-			content: ' 😷'
+	&:hover:after, &:focus:after
+		content: ' 😷'
 
-	p
-		font-size: 0.75em
-		margin: 0
-		padding: 1em 0
+p.tagline
+	font-size: 0.75em
+	margin: 0
+	padding: 1em 0
+	text-transform: capitalize
 
-	ul
-		margin: 0
-		padding: 1em 0
+ul.menu
+	margin: 0
+	padding: 1em 0
+	font-weight: bold
 
-		li
-			display: inline
-			margin: 0.5em
+	li
+		display: inline
+		margin: 0.5em
 
-			a#aboutlink:hover:after, a#aboutlink:focus:after
-				content: ' ❔'
+		a#aboutlink:hover:after, a#aboutlink:focus:after
+			content: ' ❔'
 
-			a#contactlink:hover:after, a#contactlink:focus:after
-				content: ' 📞'
+		a#contactlink:hover:after, a#contactlink:focus:after
+			content: ' 📞'
 
+// This approach to the ROYGBIV background color scheme is more scalable than my previous setup:
+// 1) Apply a `.color` class to each element that in the `list`
+// 2) As new reviews come in, the older ones get bumped down
+.color
+	color: white
+
+	a
+		color: white
+
+	//- 8th-child as future-proofing
+	&:nth-child(1), &:nth-child(8)
+		background: $red
+	&:nth-child(2), &:nth-child(9)
+		background: $orange
+		color: $gray
+
+		a
+			color: $gray
+	&:nth-child(3), &:nth-child(10)
+		background: $yellow
+		color: $gray
+
+		a
+			color: $gray
+	&:nth-child(4), &:nth-child(11)
+		background: $green
+	&:nth-child(5), &:nth-child(12)
+		background: $blue
+	&:nth-child(6), &:nth-child(13)
+		background: $indigo
+	&:nth-child(7), &:nth-child(14)
+		background: $violet
+
+// This top-level container has its children vertically and horizontally spaced nicely
 .container
 	min-height: 40vh
 	display: flex
@@ -63,14 +98,35 @@ header
 	justify-content: center
 	flex-direction: column
 
-	&:hover .text-container, &:focus .text-container
-		transform: scale(1.1)
+	&:hover:nth-child(odd) .text-container, &:focus:nth-child(odd) .text-container
+		transform: scale(1.3) skewX(1deg) skewY(1deg)
+	&:hover:nth-child(even) .text-container, &:focus:nth-child(even) .text-container
+		transform: scale(1.3) skewX(-1deg) skewY(-1deg)
+
+// For picture spin-thingy on \:target
+// Jumpy, but no JavaScript!
+\:target
+	img.pic
+		animation: grow-rotate 1s
+
+img.pic
+	clip-path: circle(50% at center)
+	display: block
+	margin: 2em 0
+	max-width: 800px
 
 .text-container
 	margin: auto
 	max-width: 800px
 	width: 80%
+
+	// This is for the scale transform on .container:hover
 	transition: transform 200ms ease-in-out
+
+.review
+	// This is non-intuitive because the div#more is technically the first child of <main>
+	&:nth-child(odd)
+		text-align: right
 
 blockquote
 	font-style: italic
@@ -81,57 +137,32 @@ blockquote
 			font-size: 80%
 			font-style: normal
 
-#pic
-	background: $orange
-
-	img
-		display: block
-		margin: auto
-		max-width: 800px
-		width: calc(80% - 2em)
-
-#review-1
-	background: $yellow
-
-	p, a
-		color: $gray
-
+#michellej
 	blockquote
 		a:hover:after, a:focus:after
 			content: ' 👌🏿'
 
-#review-2
-	background: $green
-	text-align: right
-
+#kimberlyl
 	blockquote
 		a:hover:after, a:focus:after
 			content: ' 👨‍👩‍👧‍👦'
 
-#review-3
-	background: $blue
-
+#kennethc
 	blockquote
 		a:hover:after, a:focus:after
 			content: ' 🐻'
 
-#review-4
-	background: $indigo
-	text-align: right
-
+#shawng
 	blockquote
 		a:hover:after, a:focus:after
 			content: ' ☺️'
 
-#review-5
-	background: $violet
-
+#crystalr
 	blockquote
 		a:hover:after, a:focus:after
 			content: ' 😴'
 
 #contact
-	background: $red
 	font-size: 75%
 	text-align: center
 
@@ -139,7 +170,7 @@ blockquote
 		display: none
 
 	a
-		color: white
+		// color: white
 
 		&:hover span.hidden-text, &:focus span.hidden-text
 			display: initial
@@ -148,46 +179,45 @@ blockquote
 		margin: 1em auto
 		font-style: normal
 
-footer
-	background: $orange
-	color: $gray
+.footer
 	font-size: 75%
 	text-align: center
-	min-height: 20vh
 
 	&:hover p.roygbiv, &:focus p.roygbiv
 		opacity: 1
-
-	a
-		color: $gray
+		background: lighten(black,60%)
+		border-radius: 0.25em
+		padding: 0.5em
 
 	p.roygbiv
+		font-weight: bold
 		opacity: 0
 		transition: all 0.2s ease-in-out
+		letter-spacing: 0.5em
 
 		&:hover:before, &:focus:before,
 		&:hover:after, &:focus:after
 			content: ' 🤓 '
 
 span.r
-	color: red
+	color: $red
 
 span.o
-	color: orange
+	color: $orange
 
 span.y
-	color: yellow
+	color: $yellow
 
 span.g
-	color: green
+	color: $green
 
 span.b
-	color: blue
+	color: $blue
 
 span.i
-	color: indigo
+	color: $indigo
 
 span.v
-	color: violet
+	color: $violet
 
 @import partials/_partials-index

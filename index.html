@@ -39,18 +39,22 @@
     </script>
   </head>
   <body>
-    <header>
-      <h1 class="slide-in-right"><a href="/" rel="author" title="Homepage">Anthony Craig, DDS</a></h1>
-      <p class="slide-in-left">Compassionate and friendly dental care</p>
-      <ul class="slide-in-right">
-        <li><a id="aboutlink" href="/about" title="Go to page with personal information">About</a></li>
-        <li><a id="contactlink" href="#contact" title="Go to section with contact information">Contact</a></li>
-      </ul><a href="#more" title="Keep reading" class="slide-in-left">
-        <div class="arrow"></div></a>
+    <header class="color">
+      <div class="top">
+        <h1 class="title slide-in-right"><a href="/" rel="author" title="Homepage">Anthony Craig, DDS</a></h1>
+        <p class="tagline slide-in-left">Compassionate and friendly dental&nbsp;care</p>
+        <ul class="menu slide-in-right">
+          <li><a id="aboutlink" href="/about" title="Go to page with personal information">About</a></li>
+          <li><a id="contactlink" href="#contact" title="Go to section with contact information">Contact</a></li>
+        </ul><a href="#more" title="Keep reading" class="jump slide-in-left">
+          <div class="arrow"></div></a>
+      </div>
     </header>
-    <main id="more">
-      <div id="pic"><img src="images/AnthonyCraigDDS-square.jpg" alt="Picture of Anthony Craig, DDS"></div>
-      <div id="review-1" class="container">
+    <main>
+      <div id="more" class="color">
+        <div class="container"><img src="images/AnthonyCraigDDS-square.jpg" alt="Picture of Anthony Craig, DDS" class="pic"></div>
+      </div>
+      <div id="michellej" class="container color review">
         <div class="text-container">
           <blockquote>
             <p class="quote">The genuine kindness, compassion, respectful, and calming nature comes naturally and is very welcoming. Dr. Craig and his team are amazing!</p>
@@ -60,7 +64,7 @@
           </blockquote>
         </div>
       </div>
-      <div id="review-2" class="container">
+      <div id="kimberlyl" class="container color review">
         <div class="text-container">
           <blockquote>
             <p class="quote">Treats you like family and shows a genuine interest in not just your teeth, but you as a person</p>
@@ -70,7 +74,7 @@
           </blockquote>
         </div>
       </div>
-      <div id="review-3" class="container">
+      <div id="kennethc" class="container color review">
         <div class="text-container">
           <blockquote>
             <p class="quote">Dr. Craig really cares about you as a person</p>
@@ -80,7 +84,7 @@
           </blockquote>
         </div>
       </div>
-      <div id="review-4" class="container">
+      <div id="shawng" class="container color review">
         <div class="text-container">
           <blockquote>
             <p class="quote">After 13 years between dental visits, I cannot express how happy I am with Dr. Anthony Craig</p>
@@ -90,7 +94,7 @@
           </blockquote>
         </div>
       </div>
-      <div id="review-5" class="container">
+      <div id="crystalr" class="container color review">
         <div class="text-container">
           <blockquote>
             <p class="quote">I don't mind going to the dentist anymore. He really made me feel comfortable and relaxed</p>
@@ -100,7 +104,7 @@
           </blockquote>
         </div>
       </div>
-      <div id="contact" class="container">
+      <div id="contact" class="container color">
         <address><a href="http://maps.apple.com/?q=Hospitality+Dental+Group+San+Bernardino" title="Apple Maps address link">🏢<span class="hidden-text">
               &nbsp;
               164 W Hospitality Ln<br>Ste 14<br>San Bernardino, CA 92408</span></a></address>
@@ -114,13 +118,13 @@
               &nbsp;
               @AnthonyCraigDDS</span></a></p>
       </div>
+      <!-- Non-semantic because it would be too complicated to apply-->
+      <!-- the background colors if <footer> was outside of <main>-->
+      <!-- (which it should be), so I had to go <div> soup-->
+      <div class="footer container color">
+        <p>Copyright &copy; 2015&ndash;2016 <a href="http://anthonycraig.me" title="Site's creator">Anthony Craig</a></p>
+        <p class="roygbiv"><a href="https://en.wikipedia.org/wiki/ROYGBIV" title="Wikipedia: ROYGBIV"><span class="r">R</span><span class="o">O</span><span class="y">Y</span><span class="g">G</span><span class="b">B</span><span class="i">I</span><span class="v">V</span></a></p>
+      </div>
     </main>
-    <footer class="container">
-      <p>Copyright &copy; 2015
-        <!-- Auto-updating year from http://stackoverflow.com/a/25415233-->
-        <script>new Date().getFullYear()2015&&document.write("&ndash;" + new Date().getFullYear());</script><a href="http://anthonycraig.me" title="Site's creator">Anthony Craig</a>
-      </p>
-      <p class="roygbiv"><a href="https://en.wikipedia.org/wiki/ROYGBIV" title="Wikipedia: ROYGBIV"><span class="r">R</span><span class="o">O</span><span class="y">Y</span><span class="g">G</span><span class="b">B</span><span class="i">I</span><span class="v">V</span></a></p>
-    </footer>
   </body>
 </html>
