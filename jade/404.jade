@@ -24,12 +24,12 @@ html
 		meta(name="twitter:image" content="images/anthonycraig.jpg")
 
 		// Stylesheets
-		include partials/_stylesheets
+		link(rel="stylesheet" type="text/css" href="css/styles-404.css")
 
 		// Google Analytics
 		include partials/_google-analytics
 
-	body#pagenotfound
+	body
 		main
 			h2 anthonycraigdds.com
 			p A fatal exception acdds.com has occurred at SIGH:8675309
@@ -43,5 +43,5 @@ html
 					|  unless you use a Windows machine, in which case you're screwed anyways
 
 			p Go 
-				a(href="/" rel=index title="Homepage") here
+				a(href="/#back" rel=index title="Homepage") here
 				|  to return to normalcy

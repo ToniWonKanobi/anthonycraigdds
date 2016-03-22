@@ -24,71 +24,92 @@ html(lang="en")
 		meta(name="twitter:image" content="AnthonyCraigDDS.jpg")
 
 		// Stylesheets
-		include partials/_stylesheets
+		link(rel="stylesheet" type="text/css" href="css/styles.css")
+		link(rel="stylesheet" type="text/css" href="//cloud.typography.com/7099154/7092752/css/fonts.css")
 
 		// Google Analytics
 		include partials/_google-analytics
-		
-	body
-		header.color
-			.top
-				h1.title.slide-in-right
-					a(href="/" rel="author" title="Homepage") Anthony Craig, DDS
+	
+	// `#back` id so I can use `:target` to disable animations when returning from other pages
+	body#back
+		header
+			.color
+				.container.top
+					h1.title.slide-in-right
+						a(href="/" rel="author" title="Homepage") Anthony Craig, DDS
+						
+					p.tagline.slide-in-left Compassionate and friendly dental&nbsp;care
 					
-				p.tagline.slide-in-left Compassionate and friendly dental&nbsp;care
-				
-				ul.menu.slide-in-right
-					li: a#aboutlink(href="/about" title="Go to page with personal information") About
-					li: a#contactlink(href="#contact" title="Go to section with contact information") Contact
-					
-				a.jump.slide-in-left(href="#more" title="Keep reading")
-					.arrow
+					ul.menu.slide-in-right
+						li: a(href="/about" title="Go to page with personal information") About
+						li: a(href="#contact" title="Go to section with contact information") Contact
+						
+					a.jump.slide-in-left(href="#more" title="Keep reading")
+						.arrow
 
 		main
-			#more.color
-				.container
-					img.pic(src="images/AnthonyCraigDDS-square.jpg" alt="Picture of Anthony Craig, DDS")
-			#michellej.container.color.review
-				.text-container
-					blockquote
-						p.quote The genuine kindness, compassion, respectful, and calming nature comes naturally and is very welcoming. Dr. Craig and his team are amazing!
-						p.source &mdash; 
-							cite
-								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=GS2xqO0BeKerZ7qmVBiDTg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Michelle's review") Michelle J.
+			.color
+				#more.image-container
+					.container
+						figure
+							img(src="images/AnthonyCraigDDS-square.jpg" alt="Picture of Anthony Craig, DDS")
+							figcaption Dr. Craig in front of some vines
 
-			#kimberlyl.container.color.review
-				.text-container
-					blockquote
-						p.quote Treats you like family and shows a genuine interest in not just your teeth, but you as a person
-						p.source &mdash; 
-							cite
-								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=aeFQx7MvlmuL3rkrL_NZlw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Kimberly's review") Kimberly L.
+			.color
+				#michellej.container
+					.text-container
+						.quote-container
+							.quote
+								q The genuine kindness, compassion, respectful, and calming nature comes naturally and is very welcoming. Dr. Craig and his team are amazing!
+								p.source &mdash; 
+									cite
+										a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=GS2xqO0BeKerZ7qmVBiDTg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Michelle's review") Michelle J.
+						p.emoji 👌🏿
 
-			#kennethc.container.color.review
-				.text-container
-					blockquote
-						p.quote Dr. Craig really cares about you as a person
-						p.source &mdash;
-							cite
-								a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=mvdbsjd3TSWRIKzsKzq05g" title="Link to Ken's review") Kenneth C.
+			.color
+				#kimberlyl.container
+					.text-container
+						.quote-container
+							q
+								p.quote Treats you like family and shows a genuine interest in not just your teeth, but you as a person
+								p.source &mdash; 
+									cite
+										a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=aeFQx7MvlmuL3rkrL_NZlw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Kimberly's review") Kimberly L.
+						p.emoji 👨‍👩‍👧‍👦
 
-			#shawng.container.color.review
-				.text-container
-					blockquote
-						p.quote After 13 years between dental visits, I cannot express how happy I am with Dr. Anthony Craig
-						p.source &mdash; 
-							cite
-								a(href="http://d.pr/i/1fJUR" title="Link to Shawn's review") Shawn G.
+			.color
+				#kennethc.container.review
+					.text-container
+						.quote-container
+							q
+								p.quote Dr. Craig really cares about you as a person
+								p.source &mdash;
+									cite
+										a( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=mvdbsjd3TSWRIKzsKzq05g" title="Link to Ken's review") Kenneth C.
+						p.emoji 🐻
 
-			#crystalr.container.color.review
-				.text-container
-					blockquote
-						p.quote I don't mind going to the dentist anymore. He really made me feel comfortable and relaxed
-						p.source &mdash; 
-							cite
-								a(href="http://d.pr/i/15RcH" title="Link to Crystal's review") Crystal R.
+			.color
+				#shawng.container.review
+					.text-container
+						.quote-container
+							q
+								p.quote After 13 years between dental visits, I cannot express how happy I am with Dr. Anthony Craig
+								p.source &mdash; 
+									cite
+										a(href="http://d.pr/i/1fJUR" title="Link to Shawn's review") Shawn G.
+						p.emoji ☺️
+
+			.color
+				#crystalr.container.review
+					.text-container
+						.quote-container
+							q
+								p.quote I don't mind going to the dentist anymore. He really made me feel comfortable and relaxed
+								p.source &mdash; 
+									cite
+										a(href="http://d.pr/i/15RcH" title="Link to Crystal's review") Crystal R.
+						p.emoji 😴
 
 			include partials/_contact
 
-			//- See _footer.jade for explanation as to why this isn't semantic
-			include partials/_footer
+		include partials/_footer

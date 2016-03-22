@@ -2,15 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19115",
 "files": {
-	"\/404.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/404.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/about.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -288,15 +279,15 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
-	"\/css\/sass\/partials\/_media-queries.sass": {
+	"\/css\/sass\/partials\/_contact.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/partials\/_media-queries.sass",
-		"outputAbbreviatedPath": "\/css\/sass\/css\/_media-queries.css",
+		"inputAbbreviatedPath": "\/css\/sass\/partials\/_contact.sass",
+		"outputAbbreviatedPath": "\/css\/sass\/css\/_contact.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -304,15 +295,15 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
-	"\/css\/sass\/partials\/_partials-index.sass": {
+	"\/css\/sass\/partials\/_footer.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/partials\/_partials-index.sass",
-		"outputAbbreviatedPath": "\/css\/sass\/css\/_partials-index.css",
+		"inputAbbreviatedPath": "\/css\/sass\/partials\/_footer.sass",
+		"outputAbbreviatedPath": "\/css\/sass\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -320,33 +311,17 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
-	"\/css\/sass\/partials\/_styles-about.sass": {
+	"\/css\/sass\/styles-404.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/css\/sass\/partials\/_styles-about.sass",
-		"outputAbbreviatedPath": "\/css\/sass\/css\/_styles-about.css",
+		"inputAbbreviatedPath": "\/css\/sass\/styles-404.sass",
+		"outputAbbreviatedPath": "\/css\/styles-404.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": false
-		},
-	"\/css\/sass\/partials\/_styles-pagenotfound.sass": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/sass\/partials\/_styles-pagenotfound.sass",
-		"outputAbbreviatedPath": "\/css\/sass\/css\/_styles-pagenotfound.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
@@ -367,6 +342,15 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": false
+		},
+	"\/css\/styles-404.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/styles-404.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/css\/styles.css": {
 		"fileType": 16,
@@ -514,17 +498,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/partials\/_google-analytics.jade",
 		"outputAbbreviatedPath": "\/jade\/partials\/_google-analytics.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/jade\/partials\/_stylesheets.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/jade\/partials\/_stylesheets.jade",
-		"outputAbbreviatedPath": "\/jade\/partials\/_stylesheets.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
