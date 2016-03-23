@@ -10,7 +10,7 @@ $gray: rgba(0,0,0,0.5)
 body
 	color: white
 	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif
-	font-size: 200%
+	font-size: 2vw
 	font-weight: 300
 	line-height: 1.5
 	margin: 0
@@ -27,7 +27,7 @@ a
 	display: flex
 	justify-content: center
 	margin: auto
-	max-width: 800px
+	max-width: 640px
 	min-height: 50vh
 	width: 80%
 
@@ -177,11 +177,17 @@ a
 
 figure
 	margin: 0
+	max-width: 90vh
 
 img
 	clip-path: circle(50% at center)
+	filter: contrast(125%) saturate(110%)
 	margin: 2em auto
+	transition: filter 300ms ease
 	width: 100%
+
+	&:hover, &:focus
+		filter: contrast(150%) saturate(100%)
 
 figcaption
 	color: darken(white,10%)
