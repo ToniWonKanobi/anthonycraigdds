@@ -10,16 +10,15 @@ $gray: rgba(0,0,0,0.5)
 body
 	color: white
 	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif
-	font-size: 150%
+	font-size: 200%
 	font-weight: 300
 	line-height: 1.5
 	margin: 0
-	padding: 0
 
 a
 	color: white
 	text-decoration: none
-	transition: all 0.2s ease-in-out
+	transition: all 300ms ease-in-out
 
 // Main container for each section
 .container
@@ -27,7 +26,7 @@ a
 	display: flex
 	justify-content: center
 	margin: auto
-	max-width: 640px
+	max-width: 1000px
 	min-height: 50vh
 	width: 80%
 
@@ -76,7 +75,8 @@ a
 			&:first-child a:focus:after
 				content: ' 🏠'
 
-		&:nth-child(2) a:hover:after, &:nth-child(2) a:focus:after
+		&:nth-child(2) a:hover:after,
+		&:nth-child(2) a:focus:after
 			content: ' 📞'
 
 // Disables slide-in animations when accessed from another page
@@ -143,7 +143,7 @@ a
 		&:nth-child(3), &:nth-child(10),
 		&:nth-child(4), &:nth-child(11)
 			.text-container a
-				border-bottom: 0.1em solid darken(white,15%)
+				border-bottom: 0.05em solid darken(white,15%)
 				padding-bottom: 0.1em
 
 				&:hover, &:focus
@@ -152,9 +152,9 @@ a
 		&:nth-child(5), &:nth-child(12),
 		&:nth-child(6), &:nth-child(13)
 			.text-container a
-				border-bottom: 0.075em solid lighten($gray,50%)
+				border-bottom: 0.05em solid lighten($gray,50%)
 				color: $gray
-				padding-bottom: 0.075em
+				padding-bottom: 0.1em
 
 				&:hover, &:focus
 					border-bottom-color: $gray
@@ -172,35 +172,48 @@ a
 	img
 		animation: grow-rotate 1s
 
-.image-container:hover figcaption, .image-container:focus figcaption
-	opacity: 1
+// So that the image can be as big as possible
+.image-container
+	align-items: center
+	display: flex
+	height: 100%
+
+	.container
+		min-height: 100vh
+		min-width: 100vw
 
 figure
 	margin: 0
-	max-width: 90vh
 
 img
 	clip-path: circle(50% at center)
+	display: block
 	filter: contrast(125%) saturate(110%)
-	margin: 2em auto
-	transition: filter 300ms ease
-	width: 100%
+	transition: all 500ms ease-in-out
+	margin: 1em auto
+	width: 90vh
 
 	&:hover, &:focus
-		filter: contrast(150%) saturate(100%)
+		transform: rotateZ(2deg)
+
+		~ figcaption
+			background-color: rgba(0,0,0,0.5)
+			border-radius: 0.25em
+			color: white
+			opacity: 1
+			padding: 0.5em
+			transform: translateY(-300px)
 
 figcaption
 	color: darken(white,10%)
 	font-size: 90%
 	font-style: italic
-	margin: -1em auto 1em
-
-	body.about &
-		margin-top: -2em
-
+	margin: 1em auto 0
+	max-width: 50%
 	opacity: 0
 	text-align: center
-	transition: all 300ms ease-in-out
+	transition: all 500ms ease-out
+	transform: translateY(100vh)
 
 // Container for the text within the dimensions container
 .text-container
@@ -252,11 +265,11 @@ q
 		animation: bounce 2s
 
 		&:nth-child(2)
-			animation-delay: 0.75s
+			animation-delay: 0.25s
 		&:nth-child(3)
-			animation-delay: 1.5s
+			animation-delay: .5s
 		&:nth-child(4)
-			animation-delay: 2s
+			animation-delay: .75s
 
 @media (max-width: 740px)
 	body
@@ -275,7 +288,9 @@ q
 		min-height: 100vh
 
 	img
-		width: 100%
+		display: block
+		margin: auto
+		width: 90%
 
 	figcaption
 		opacity: 1
@@ -292,7 +307,7 @@ q
 		width: 100%
 		margin: 0
 
-	.contact-container
+	.contact-container .container
 		flex-direction: column
 
 	.contact-emoji
