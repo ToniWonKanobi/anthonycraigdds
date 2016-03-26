@@ -176,14 +176,17 @@ a
 .image-container
 	align-items: center
 	display: flex
-	height: 100%
+	height: 100vh
 
 	.container
-		min-height: 100vh
-		min-width: 100vw
+		min-height: inherit
 
 figure
 	margin: 0
+
+	&:hover, &:focus
+		figcaption
+			opacity: 1
 
 img
 	clip-path: circle(50% at center)
@@ -191,27 +194,17 @@ img
 	filter: contrast(125%) saturate(110%)
 	transition: all 500ms ease-in-out
 	margin: 1em auto
-	width: 90vh
-
-	&:hover, &:focus
-		~ figcaption
-			background-color: rgba(0,0,0,0.5)
-			border-radius: 0.25em
-			color: white
-			opacity: 1
-			padding: 0.5em
-			transform: translateY(-300px)
+	width: 80vh
+	max-width: 100%
 
 figcaption
 	color: darken(white,10%)
 	font-size: 90%
 	font-style: italic
-	margin: 1em auto 0
-	max-width: 50%
+	margin: 1em auto
 	opacity: 0
 	text-align: center
-	transition: all 500ms ease-out
-	transform: translateY(100vh)
+	transition: opacity 200ms ease-in-out
 
 // Container for the text within the dimensions container
 .text-container
@@ -260,7 +253,7 @@ q
 // Contact jump animation
 \:target
 	.contact-emoji
-		animation: bounce 2s
+		animation: bounce 3s
 
 		&:nth-child(2)
 			animation-delay: 0.25s
@@ -268,6 +261,13 @@ q
 			animation-delay: .5s
 		&:nth-child(4)
 			animation-delay: .75s
+
+@media (max-width: 1030px)
+	body
+		font-size: 150%
+
+	figcaption
+		opacity: 1
 
 @media (max-width: 740px)
 	body
@@ -288,7 +288,7 @@ q
 	img
 		display: block
 		margin: auto
-		width: 90%
+		max-width: 100%
 
 	figcaption
 		opacity: 1
