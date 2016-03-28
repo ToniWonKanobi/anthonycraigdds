@@ -370,24 +370,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/anthonycraigdds-square.jpg": {
+	"\/images\/AnthonyCraigDDS-square.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 247360,
-		"inputAbbreviatedPath": "\/images\/anthonycraigdds-square.jpg",
-		"outputAbbreviatedPath": "\/images\/anthonycraigdds-square.jpg",
+		"inputAbbreviatedPath": "\/images\/AnthonyCraigDDS-square.jpg",
+		"outputAbbreviatedPath": "\/images\/AnthonyCraigDDS-square.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/anthonycraigdds.jpg": {
+	"\/images\/AnthonyCraigDDS.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 348583,
-		"inputAbbreviatedPath": "\/images\/anthonycraigdds.jpg",
-		"outputAbbreviatedPath": "\/images\/anthonycraigdds.jpg",
+		"inputAbbreviatedPath": "\/images\/AnthonyCraigDDS.jpg",
+		"outputAbbreviatedPath": "\/images\/AnthonyCraigDDS.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -424,6 +424,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/jade\/404.jade": {
 		"compileDebug": 1,
