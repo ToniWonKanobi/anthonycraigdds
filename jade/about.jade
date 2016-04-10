@@ -32,35 +32,36 @@ html(lang="en")
 		
 	body.about
 		header
-			.color
-				.container.slide-down.top
+			.violet.container
+				.content-container.slide-down.top
 					h1.title
 						a(href="/about" title="About Dr. Anthony Craig") About Dr. Anthony Craig
 					p.tagline Learn more about your future dentist
-					ul.menu
-						li: a(href="/#back" title="Go back home") Home
-						li: a(href="#contact" title="Go to the contact section") Contact
-					a.jump(href="#more" title="Keep reading")
-						.arrow
+					
+					nav
+						ul.nav
+							li.nav-item: a.back-link(href="/#back" title="Go back home") Home
+							li.nav-item: a.contact-links(href="#contact" title="Go to the contact section") Contact
+						a.jump(href="#more" title="Keep reading")
+							.arrow
 
 		main
-			.color
-				#more.image-container
-					.container
-						figure
-							img.pic(src="images/us.jpg" al="Dr. Craig with his wife, Allison, and dog, Smokey" title="Allison, Smokey, and I")
-							figcaption Dr. Craig and his wife, Allison, and dog, Smokey
+			section#more.violet.container
+				.content-container.image-container
+					figure.profile-pic-caption-container
+						img.profile-pic(src="images/us.jpg" al="Dr. Craig with his wife, Allison, and dog, Smokey" title="Allison, Smokey, and I")
+						figcaption.profile-pic-caption Dr. Craig and his wife, Allison, and dog, Smokey
 
-			.color
-				.container
-					.text-container
+			section
+				h2.hidden Information
+				.indigo.container
+					.content-container.information-paragraph
 						p Dr. Anthony Craig graduated form 
 							a(href="https://dentistry.llu.edu/" title="LLUSD") Loma Linda University School of Dentistry in 2013
 							| . He has been practicing in the Inland Empire ever since.
 
-			.color
-				.container
-					.text-container
+				.blue.container
+					.content-container.information-paragraph
 						p Besides all of the typical dental servies you might expect (
 							a(href="https://en.wikipedia.org/wiki/Dental_restoration" title="Wikipeida: Dental restorations") fillings
 							| , 
@@ -73,9 +74,8 @@ html(lang="en")
 							a(href="https://en.wikipedia.org/wiki/Dental_implant" title="Wikipedia: Dental implants") dental implants
 							| .
 
-			.color
-				.container
-					.text-container
+				.green.container
+					.content-container.information-paragraph
 						p Dr. Craig grew up in Central California, and attended 
 							a(href="http://www.puc.edu/academics/departments/chemistry/home" title="PUC Chemistry Department") Pacific Union College
 							|  near Napa, CA for his undergraduate traning. There he met his wife, 
@@ -84,9 +84,8 @@ html(lang="en")
 							a(href="https://twitter.com/smokeythedingo" title="Smokey on Twitter") Smokey
 							| , near Loma Linda, CA.
 
-			.color
-				.container
-					.text-container
+				.yellow.container
+					.content-container.information-paragraph
 						p When he's not at the office, Dr. Craig enjoys all things tech. (He even built this 
 							a(href="https://github.com/ToniWonKanobi/anthonycraigdds" title="GitHub repo for this website") website
 							| !) He plays 
@@ -95,16 +94,40 @@ html(lang="en")
 							a(href="https://theoveranalyzed.net/tags/Star%20Wars" title="Dr. Craig's posts about Star Wars") Star Wars
 							|  than any dentist should.
 
-			.color
-				.container
-					.text-container
+				.orange.container
+					.content-container.information-paragraph
 						p If coming to the dentist is something you dread, fear not! Dr. Craig is ready to take you on&mdash;no matter how difficult you think your situation might be.
 
-			.color
-				.container
-					.text-container
+				.red.container
+					.content-container.information-paragraph
 						p Taking care of your dental issues is very important. But what's more important is making patients feel comfortable. Dr. Craig strives to make every patient feel welcome and safe.
 
-			include partials/_contact
+			section#contact
+				h2.hidden Contact Information
+				.violet.container
+					.content-container.contact-container
+						.contact-emoji
+							a.contact-link(href="http://maps.apple.com/?q=Hospitality+Dental+Group+San+Bernardino" title="Apple Maps address link") 🏢 
+								span.hidden Address
 
-			include partials/_footer
+						.contact-emoji
+							a.contact-link(href="tel:1-909-888-7817" title="Call this phone number to book your appointment") 📱 
+								span.hidden Telephone Number
+
+						.contact-emoji
+							a.contact-link(href="mailto:doctor@anthonycraigdds.com" title="Email me") ✉️ 
+								span.hidden Email
+
+						.contact-emoji
+							a.contact-link(href="http://twitter.com/anthonycraigdds" title="Dr. Anthony Craig on Twitter") 🐦 
+								span.hidden Twitter
+
+						.contact-emoji
+							a.contact-link(href="http://instagram.com/anthonycraigdds" title="Dr. Anthony Craig on Instagram") 📷 
+								span.hidden Instagram
+
+		footer
+			.gray.container.footer
+				.content-container
+					p.copyright Copyright &copy; 2015&ndash;2016 
+						a(href="http://anthonycraig.me" title="Site's creator") Anthony&nbsp;Craig

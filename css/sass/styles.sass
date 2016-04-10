@@ -7,9 +7,55 @@ $indigo: rgba(75, 0, 130, 0.5)
 $violet: rgba(190, 104, 190, 0.75)
 $gray: rgba(0,0,0,0.5)
 
+// ROYGBIV colors
+.red
+	background: $red
+
+.orange
+	background: $orange
+
+.yellow
+	background: $yellow
+
+.green
+	background: $green
+
+.blue
+	background: $blue
+
+.indigo
+	background: $indigo
+
+.violet
+	background: $violet
+
+.gray
+	background: $gray
+
+.red, .green, .blue, .indigo, .violet
+	.information-paragraph
+		a
+			border-bottom: 1.5px solid darken(white, 20%)
+			padding-bottom: 1.5px
+
+			&:hover, &:focus
+				border-bottom-color: white
+
+.orange, .yellow
+	.information-paragraph
+		color: $gray
+
+		a
+			border-bottom: 1.5px solid lighten($gray, 70%)
+			color: $gray
+			padding-bottom: 1.5px
+
+			&:hover, &:focus
+				border-bottom-color: $gray
+
 body
 	color: white
-	font-family: "Whitney SSm A", "Whitney SSm B", Avenir, sans-serif
+	font-family: "Whitney SSm A", "Whitney SSm B", "Avenir Next", sans-serif
 	font-size: 200%
 	font-weight: 300
 	line-height: 1.5
@@ -20,36 +66,45 @@ a
 	text-decoration: none
 	transition: all 300ms ease-in-out
 
-// Main container for each section
+.hidden
+	display: none
+
+// Main horizontal and vertical container
 .container
+	display: flex
+	height: 100vh
+
+// Container for the text within the main container
+.content-container
 	align-items: center
 	display: flex
-	justify-content: center
+	justify-content: space-between
 	margin: auto
-	max-width: 1000px
-	min-height: 50vh
+	max-width: 800px
 	width: 80%
 
-	&:hover .text-container p.emoji,
-	&:focus .text-container p.emoji
-		transform: translateX(-50px) rotateZ(5deg)
+// Hover on a review, and the emoji moves
+.review
+	&:hover, &:focus
+		.quote-emoji
+			animation: pendulum 2s ease-in-out infinite alternate-reverse
 
-	body.about &
-		&:hover .text-container, &:focus .text-container
-			transform: scale(1.1)
+	// This is for the `transform: scale()` on `.container:hover`
+	transition: transform 200ms ease-in-out
 
-// Overrides for regular .container
+// Overrides for regular .content-container
 .top
 	flex-direction: column
-	min-height: 100vh
-	text-align: center
+	justify-content: center
 
 .title
 	font-weight: 700
 	margin: 0
 
-	&:hover:after, &:focus:after
-		content: ' 😷'
+	//- Not sure if I'll keep this
+	&:hover, &:focus
+		&:after
+			content: ' 😷'
 
 .tagline
 	font-size: 0.75em
@@ -57,27 +112,48 @@ a
 	padding: 1em 0
 	text-transform: capitalize
 
-.menu
+.nav
 	margin: 0
 	padding: 1em 0
 	font-weight: bold
 
-	li
-		display: inline
-		margin: 0.5em
+.nav-item
+	display: inline
+	margin: 0.5em
 
-		&:first-child a:hover:after,
-		&:first-child a:focus:after
-			content: ' ❔'
+.about-link
+	&:hover:after,
+	&:focus:after
+		content: ' ❔'
 
-		body.about  &
-			&:first-child a:hover:after,
-			&:first-child a:focus:after
-				content: ' 🏠'
+.back-link
+	&:hover:after,
+	&:focus:after
+		content: ' 🏠'
 
-		&:nth-child(2) a:hover:after,
-		&:nth-child(2) a:focus:after
-			content: ' 📞'
+.contact-links
+	&:hover:after,
+	&:focus:after
+		content: ' 📞'
+
+.arrow
+	height: 0
+	width: 0
+	margin: 1em auto
+
+	// So, borders are triangle spaces, because who knows
+	border-left: 20px solid transparent
+	border-right: 20px solid transparent
+	border-top: 20px solid white
+
+	// Bouncing
+	animation: bounce 1.75s ease-in-out infinite
+	transition: border 150ms ease-in-out, transform 300ms ease-in
+
+	// Spinning
+	&:hover, &:focus
+		border-top: 20px solid darken(white,5%)
+		transform: rotateZ(360deg)
 
 // Disables slide-in animations when accessed from another page
 \:target
@@ -85,119 +161,32 @@ a
 	.slide-in-left
 		animation: none
 
-// ROYGBIV
-.color
-	color: white
-
-	a
-		color: white
-
-	&:nth-child(1), &:nth-child(8)
-		background: $red
-	&:nth-child(2), &:nth-child(9)
-		background: $orange
-		color: $gray
-
-		a
-			color: $gray
-	&:nth-child(3), &:nth-child(10)
-		background: $yellow
-		color: $gray
-
-		a
-			color: $gray
-	&:nth-child(4), &:nth-child(11)
-		background: $green
-	&:nth-child(5), &:nth-child(12)
-		background: $blue
-	&:nth-child(6), &:nth-child(13)
-		background: $indigo
-	&:nth-child(7), &:nth-child(14)
-		background: $violet
-
-	body.about &
-		color: white
-
-		a
-			color: white
-
-		&:nth-child(1), &:nth-child(8)
-			background: $violet
-		&:nth-child(2), &:nth-child(9)
-			background: $indigo
-		&:nth-child(3), &:nth-child(10)
-			background: $blue
-		&:nth-child(4), &:nth-child(11)
-			background: $green
-		&:nth-child(5), &:nth-child(12)
-			background: $yellow
-			color: $gray
-		&:nth-child(6), &:nth-child(13)
-			background: $orange
-			color: $gray
-		&:nth-child(7), &:nth-child(14)
-			background: $red
-
-		// Adds the appropriate link underlines based on set ROYGBIV backgroudn colors
-		&:nth-child(2), &:nth-child(9),
-		&:nth-child(3), &:nth-child(10),
-		&:nth-child(4), &:nth-child(11)
-			.text-container a
-				border-bottom: 0.05em solid darken(white,15%)
-				padding-bottom: 0.1em
-
-				&:hover, &:focus
-					border-bottom-color: white
-
-		&:nth-child(5), &:nth-child(12),
-		&:nth-child(6), &:nth-child(13)
-			.text-container a
-				border-bottom: 0.05em solid lighten($gray,50%)
-				color: $gray
-				padding-bottom: 0.1em
-
-				&:hover, &:focus
-					border-bottom-color: $gray
-
-	// Alternates emoji locations
-	&:nth-child(odd)
-		.container .text-container
-			.quote-container
-				order: 2
-			p.emoji
-				order: 1
-
 // For picture spin-thingy on :target. Jumpy, but no JavaScript!
 \:target
-	img
-		animation: grow-rotate 1s
+	.profile-pic
+		animation: grow-rotate ease-out 1s
 
-// So that the image can be as big as possible
+// Modifies regular .container so that the image can be as big as possible
 .image-container
-	align-items: center
-	display: flex
 	height: 100vh
 
-	.container
-		min-height: inherit
-
-figure
-	margin: 0
+.profile-pic-caption-container
+	margin: auto
 
 	&:hover, &:focus
-		figcaption
+		.profile-pic-caption
 			opacity: 1
 
-img
+.profile-pic
 	clip-path: circle(50% at center)
 	display: block
 	filter: contrast(125%) saturate(110%)
-	transition: all 500ms ease-in-out
 	margin: 1em auto
-	width: 80vh
 	max-width: 100%
+	transition: all 500ms ease-in-out
+	width: 80vh
 
-figcaption
+.profile-pic-caption
 	color: darken(white,10%)
 	font-size: 90%
 	font-style: italic
@@ -206,118 +195,192 @@ figcaption
 	text-align: center
 	transition: opacity 200ms ease-in-out
 
-// Container for the text within the dimensions container
-.text-container
-	align-items: center
-	display: flex
-	justify-content: space-between
+.review
+	// Alternates emoji locations
+	&:nth-child(odd)
+		.quote-container
+			order: 2
+			text-align: right
 
-	body.about &
-		line-height: 1.7
+		.emoji
+			order: 1
 
-	// This is for the scale transform on .container:hover
-	transition: transform 200ms ease-in-out
-
-// Container for the quotes
+// Container for the quote and emoji
 .quote-container
 	width: 60%
 
-q
+.quote
 	font-style: italic
 	margin: 0
-
-	// Necessary w/o resets
-	&:before, &:after
-		content: none
 
 .source
 	font-size: 90%
 
-	cite
-		font-style: normal
+.source-link
+	&:hover::after,
+	&:focus::after
+		content: ' 🔗'
 
-	a
-		&:hover::after,
-		&:focus::after
-			content: ' 🔗'
-
-.emoji
+.quote-emoji
 	font-size: 450%
 	transition: all 300ms ease
-	width: 20%
+	// width: 20%
 
+// Adds a bounce when direct linking to review
 \:target
-	.emoji
-		animation: bounce 1s
+	.quote-emoji
+		animation: bounce 2s ease-in-out infinite
+
+.information-paragraph
+	line-height: 1.7
+
+.contact-container
+	a
+		border-bottom: 0
+
+.contact-emoji
+	font-size: 200%
+	text-align: center
+
+.contact-link
+	display: inline-block
+	margin: 0
+	padding: 0.25em 0.5em
+	transition: all 300ms ease
+
+	&:hover, &:focus
+		background-color: rgba(255,255,255,0.3)
+		border-radius: 1em
+		transform: rotateZ(360deg)
 
 // Contact jump animation
 \:target
 	.contact-emoji
-		animation: bounce 3s
+		animation: bounce 3s ease-in-out
 
+		// Almost like it's a cascade effect or something
 		&:nth-child(2)
-			animation-delay: 0.25s
+			animation-delay: 250ms
 		&:nth-child(3)
-			animation-delay: .5s
+			animation-delay: 500ms
 		&:nth-child(4)
-			animation-delay: .75s
+			animation-delay: 750ms
+		&:nth-child(5)
+			animation-delay: 1s
 
-@media (max-width: 1030px)
+// Modifies the regular .container
+.footer
+	color: white
+	font-size: medium
+	height: initial
+
+.copyright
+	margin: 1em auto
+
+// Weird, but I need this for iPads
+@media (max-width: 1400px)
 	body
 		font-size: 150%
 
-	figcaption
+	.profile-pic-caption
 		opacity: 1
 
 @media (max-width: 740px)
-	body
+	.about
 		font-size: 130%
 
-	.color
-		// Alternates emoji locations
-		&:nth-child(odd), &:nth-child(even)
-			.container .text-container
-				.quote-container
-					order: 2
-				.emoji
-					order: 1
-
-	.container
-		min-height: 100vh
-
-	img
-		display: block
-		margin: auto
-		max-width: 100%
-
-	figcaption
+	.profile-pic-caption
 		opacity: 1
 
-	.text-container
+	.content-container
 		flex-direction: column
 		text-align: center
 
-		body.about &
-			text-align: initial
+	.information-paragraph
+		text-align: initial
+
+	.review
+		// I targeted the odd .reviews earlier, so now I have to explicietly re-target them, *and* the even .reviews as well
+		// Ideally, I'd use JavaScript to apply a class of `textAlignRight` to every even .review that I could then easily target via CSS Iinstead of using this cascade
+		&:nth-child(odd), &:nth-child(even)
+			.quote-container
+				order: 2
+				text-align: center
+
+			.emoji
+				order: 1
 
 	.quote-container,
-	.emoji
-		width: 100%
-		margin: 0
-
-	.contact-container .container
-		flex-direction: column
-
-	.contact-emoji
+	.quote-emoji
+		margin: auto
 		width: 100%
 
-	footer
-		.container
-			min-height: initial
-			text-align: center
+.slide-in-right
+	animation: slide-in-right 2s ease
 
-@import partials/_contact
+@keyframes slide-in-right
+	0%
+		transform: translateX(-100vw)
+		opacity: 0
+	50%
+		transform: translateX(10vw)
+		opacity: 50%
+	100%
+		transform: translateX(0)
+		opacity: 1
 
-@import partials/_footer
+.slide-in-left
+	animation: slide-in-left 2s ease
 
-@import partials/_animations
+@keyframes slide-in-left
+	0%
+		transform: translateX(100vw)
+		opacity: 0
+	50%
+		transform: translateX(-10vw)
+		opacity: 50%
+	100%
+		transform: translateX(0)
+		opacity: 1
+
+// Tied to the animation property above
+@keyframes bounce
+	0%, 60%, 70%, 80%, 90%, 100%
+		transform: translateY(0)
+	10%
+		transform: translateY(-50%)
+	20%
+		transform: translateY(0)
+	30%
+		transform: translateY(-25%)
+	40%
+		transform: translateY(0)
+	50%
+		transform: translateY(-10%)
+
+@keyframes pendulum
+	0%, 100%
+		transform: translate(0)
+	33%
+		transform: translate(-0.5em)
+	66%
+		transform: translate(0.5em)
+
+// For about page
+.slide-down
+	animation: slide-down 1s ease-out
+
+@keyframes slide-down
+	from
+		transform: translateY(-200px)
+		opacity: 0
+	to
+		transform: translateY(0)
+		opacity: 1
+
+// For picture spin-thingy on \:target
+@keyframes grow-rotate
+	from
+		transform: scale(1.1) rotateZ(360deg)
+	to
+		transform: scale(1) rotateZ(0deg)
