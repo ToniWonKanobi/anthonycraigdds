@@ -7,6 +7,22 @@ $indigo: rgba(75, 0, 130, 0.5)
 $violet: rgba(190, 104, 190, 0.75)
 $gray: rgba(0,0,0,0.5)
 
+body
+	color: white
+	font-family: "Whitney SSm A", "Whitney SSm B", "Avenir Next", sans-serif
+	font-size: 200%
+	font-weight: 300
+	line-height: 1.5
+	margin: 0
+
+a
+	color: white
+	text-decoration: none
+	transition: all 300ms ease-in-out
+
+.hidden
+	display: none
+
 // ROYGBIV colors
 .red
 	background: $red
@@ -42,9 +58,12 @@ $gray: rgba(0,0,0,0.5)
 				border-bottom-color: white
 
 .orange, .yellow
-	.information-paragraph
+	color: $gray
+
+	a
 		color: $gray
 
+	.information-paragraph
 		a
 			border-bottom: 1.5px solid lighten($gray, 70%)
 			color: $gray
@@ -52,22 +71,6 @@ $gray: rgba(0,0,0,0.5)
 
 			&:hover, &:focus
 				border-bottom-color: $gray
-
-body
-	color: white
-	font-family: "Whitney SSm A", "Whitney SSm B", "Avenir Next", sans-serif
-	font-size: 200%
-	font-weight: 300
-	line-height: 1.5
-	margin: 0
-
-a
-	color: white
-	text-decoration: none
-	transition: all 300ms ease-in-out
-
-.hidden
-	display: none
 
 // Main horizontal and vertical container
 .container
