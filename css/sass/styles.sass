@@ -150,13 +150,14 @@ a
 	border-top: 20px solid white
 
 	// Bouncing
-	animation: bounce 1.75s ease-in-out infinite
+	animation: swing 1s ease-in-out infinite
+	animation-delay: 1s
 	transition: border 150ms ease-in-out, transform 300ms ease-in
 
 	// Spinning
 	&:hover, &:focus
-		border-top: 20px solid darken(white,5%)
 		transform: rotateZ(360deg)
+		animation-name: pulse
 
 // Disables slide-in animations when accessed from another page
 \:target
@@ -165,9 +166,9 @@ a
 		animation: none
 
 // For picture spin-thingy on :target. Jumpy, but no JavaScript!
-// \:target
-// 	.profile-pic
-// 		animation: grow-rotate ease-out 1s
+\:target
+	.profile-pic
+		animation: grow-rotate ease-out 1s
 
 // Modifies regular .container so that the image can be as big as possible
 .image-container
