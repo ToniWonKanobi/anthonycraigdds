@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/about.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/about.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/css\/fonts\/425976\/0AF5FDEE8EEFDB293.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -322,24 +313,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/AnthonyCraigDDS-square.jpg": {
+	"\/images\/anthonycraigdds-square.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 247360,
-		"inputAbbreviatedPath": "\/images\/AnthonyCraigDDS-square.jpg",
-		"outputAbbreviatedPath": "\/images\/AnthonyCraigDDS-square.jpg",
+		"inputAbbreviatedPath": "\/images\/anthonycraigdds-square.jpg",
+		"outputAbbreviatedPath": "\/images\/anthonycraigdds-square.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/AnthonyCraigDDS.jpg": {
+	"\/images\/anthonycraigdds.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 348583,
-		"inputAbbreviatedPath": "\/images\/AnthonyCraigDDS.jpg",
-		"outputAbbreviatedPath": "\/images\/AnthonyCraigDDS.jpg",
+		"inputAbbreviatedPath": "\/images\/anthonycraigdds.jpg",
+		"outputAbbreviatedPath": "\/images\/anthonycraigdds.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
