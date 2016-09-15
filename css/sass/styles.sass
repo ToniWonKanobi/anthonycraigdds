@@ -86,6 +86,11 @@ a
 	max-width: 800px
 	width: 80%
 
+	// Gosh I love this Sass thing
+	.resume &
+		flex-direction: column
+		width: initial
+
 // Hover on a review, and the emoji moves
 .review
 	&:hover, &:focus
@@ -237,6 +242,16 @@ a
 
 .information-paragraph
 	line-height: 1.7
+
+.resume-link
+	font-size: 500%
+
+	&:hover, &:focus
+		animation: tada 1s ease-in-out
+		// display: none
+
+.resume-text
+	font-size: 140%
 
 .contact-container
 	a
