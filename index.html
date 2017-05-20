@@ -149,7 +149,9 @@
     <footer>
       <div class="gray container footer">
         <div data-wow-duration="1s" data-wow-delay="500ms" class="content-container contact-container wow bounceIn">
-          <p class="copyright">Copyright &copy; 2015&ndash;2016 <a href="http://anthonycraig.me" title="Site's creator">Anthony&nbsp;Craig</a></p>
+          <p class="copyright">
+            <script>new Date().getFullYear()>2015 && document.write('Copyright &copy; 2015&ndash;' + new Date().getFullYear());</script> <a href="http://anthonycraig.me" title="Site's creator">Anthony&nbsp;Craig</a>
+          </p>
         </div>
       </div>
     </footer>

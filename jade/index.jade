@@ -143,5 +143,9 @@ html(lang="en")
 		footer
 			.gray.container.footer
 				.content-container.contact-container.wow.bounceIn(data-wow-duration="1s" data-wow-delay="500ms")
-					p.copyright Copyright &copy; 2015&ndash;2016 
+					p.copyright
+						//- Auto-updating year from http://stackoverflow.com/a/25415233
+						script.
+							new Date().getFullYear()>2015 && document.write('Copyright &copy; 2015&ndash;' + new Date().getFullYear());
+						|  
 						a(href="http://anthonycraig.me" title="Site's creator") Anthony&nbsp;Craig
