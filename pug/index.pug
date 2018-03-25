@@ -1,0 +1,151 @@
+doctype
+html(lang="en").toni
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Dr. Anthony Craig
+    meta(name="description" content="Dr. Anthony Craig is ready take care of your dental needs with compassion. Call today!")
+    include partials/_favicons
+
+    // Open Graph and Twitter Cards
+    meta(property="og:locale" content="en_US")
+    meta(property="og:site_name" content="Anthony Craig, DDS")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Anthony Craig, DDS")
+    meta(property="article:author" content="https://www.facebook.com/toniwonkanobi")
+    meta(property="og:description" content="Dr. Anthony Craig is ready take care of your dental needs. Call today!")
+    meta(property="og:image" content="images/AnthonyCraigDDS.jpg")
+    meta(name="twitter:site" content="@anthonycraigdds")
+    meta(name="twitter:creator" content="@anthonycraigdds")
+    meta(name="twitter:title" content="Anthony Craig, DDS")
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:description" content="Dr. Anthony Craig is ready take care of your dental needs with compassion. Call today!")
+    meta(name="twitter:image" content="AnthonyCraigDDS.jpg")
+
+    // Stylesheets
+    link(rel="stylesheet" type="text/css" href="css/styles.css")
+    link(rel="stylesheet" type="text/css" href="//cloud.typography.com/7099154/7092752/css/fonts.css")
+    link(rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css")
+
+    // WOW.js animations
+    script(src="bower_components/wow/dist/wow.min.js")
+    script new WOW().init();
+
+    // Google Analytics
+    include partials/_google-analytics
+  
+  // `#back` id so I can use `:target` to disable animations when returning from other pages
+  body#back
+    header
+      .red.container
+        .content-container.top
+          h1.title.slide-in-right
+            a(href="/" rel="author" title="Homepage") Anthony Craig, DDS
+            
+          p.tagline.slide-in-left Compassionate and friendly dental&nbsp;care
+          
+          nav
+            ul.nav.slide-in-right
+              li.nav-item: a.about-link(href="/about" title="Go to page with personal information") About
+              li.nav-item: a.contact-links(href="#contact" title="Go to section with contact information") Contact
+            .slide-in-left
+              a.jump(href="#more" title="Keep reading")
+                .arrow
+
+    main
+      section#more.red.container
+        .content-container.image-container
+          figure.profile-pic-caption-container
+            img.profile-pic.wow.bounceInUp(data-wow-duration="1s" src="images/drtoni.jpg" alt="Picture of Anthony Craig, DDS")
+            figcaption.profile-pic-caption.wow.bounceInUp(data-wow-duration="1s") Dr. Craig being silly
+
+      section.reviews
+        h2.hidden Reviews
+        #derrickg.orange.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=SYOIcDwEZF2E8G8_9LO1Uw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)") Everything was professional, he was very courteous and kind
+              p.source &mdash; 
+                a.source-link(href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=SYOIcDwEZF2E8G8_9LO1Uw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Derrick's review") Derrick G.
+            p.quote-emoji 👔
+        #review4.yellow.container.review
+          #michellej.content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=GS2xqO0BeKerZ7qmVBiDTg(direct)") The genuine kindness, compassion, respectful, and calming nature comes naturally and is very welcoming. Dr. Craig and his team are amazing!
+              p.source &mdash; 
+                a.source-link( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=GS2xqO0BeKerZ7qmVBiDTg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Michelle's review") Michelle J.
+            p.quote-emoji 👌🏿
+
+        #kimberlyl.green.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=aeFQx7MvlmuL3rkrL_NZlw(direct)") Treats you like family and shows a genuine interest in not just your teeth, but you as a person
+              p.source &mdash; 
+                a.source-link( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=aeFQx7MvlmuL3rkrL_NZlw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" title="Link to Kimberly's review") Kimberly L.
+            p.quote-emoji 👨‍👩‍👧‍👦
+
+        #kennethc.blue.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=mvdbsjd3TSWRIKzsKzq05g") Dr. Craig really cares about you as a person
+              p.source &mdash; 
+                a.source-link( href="http://www.yelp.com/biz/hospitality-dental-and-orthodontics-san-bernardino-san-bernardino-2?hrid=mvdbsjd3TSWRIKzsKzq05g" title="Link to Ken's review") Kenneth C.
+            p.quote-emoji 🐻
+
+        #shawng.indigo.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/not_recommended_reviews/the-shire-family-dentistry-moreno-valley?not_recommended_start=20") After 13 years between dental visits, I cannot express how happy I am with Dr. Anthony Craig
+              p.source &mdash; 
+                a.source-link(href="/images/shawngreview.png" title="Link to Shawn's review") Shawn G.
+            p.quote-emoji ☺️
+  
+        #ashleyd.violet.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/not_recommended_reviews/hemet-dental-group-and-orthodontics-hemet?not_recommended_start=40") Made sure to get to know me as a patient, first and foremost. I did not wait long for my care and I was well aware of everything that was going to happen next. Even gave me a blanket!
+              p.source &mdash; 
+                a.source-link(href="/images/ashleydreview.png" title="Link to Ashley's review") Ashley D.
+            p.quote-emoji 🛏
+
+        #crystalr.red.container.review
+          .content-container.wow.fadeInUp
+            .quote-container
+              q.quote(cite="http://www.yelp.com/not_recommended_reviews/hemet-dental-group-and-orthodontics-hemet?not_recommended_start=40") I don't mind going to the dentist anymore. He really made me feel comfortable and relaxed
+              p.source &mdash; 
+                a.source-link(href="/images/crystalrreview.png" title="Link to Crystal's review") Crystal R.
+            p.quote-emoji 😴
+
+      section#contact
+        h2.hidden Contact Information
+        .orange.container
+          .content-container.wow.bounceInUp(data-wow-duration="1s")
+            .contact-emoji
+              a.contact-link(href="http://maps.apple.com/?q=Anthony+Craig+DDS" title="Apple Maps address link") 🏢 
+                span.hidden Address
+
+            .contact-emoji
+              a.contact-link(href="tel:1-707-678-9296" title="Call this phone number to book your appointment") 📱 
+                span.hidden Telephone Number
+
+            .contact-emoji
+              a.contact-link(href="mailto:doctor@anthonycraigdds.com" title="Email me") ✉️ 
+                span.hidden Email
+
+            .contact-emoji
+              a.contact-link(href="http://twitter.com/anthonycraigdds" title="Dr. Anthony Craig on Twitter") 🐦 
+                span.hidden Twitter
+
+            .contact-emoji
+              a.contact-link(href="http://instagram.com/anthonycraigdds" title="Dr. Anthony Craig on Instagram") 📷 
+                span.hidden Instagram
+
+    footer
+      .gray.container.footer
+        .content-container.contact-container.wow.bounceIn(data-wow-duration="1s" data-wow-delay="500ms")
+          p.copyright
+            //- Auto-updating year from http://stackoverflow.com/a/25415233
+            script.
+              new Date().getFullYear()>2015 && document.write('Copyright &copy; 2015&ndash;' + new Date().getFullYear());
+            |  
+            a(href="http://anthonycraig.me" title="Site's creator") Anthony&nbsp;Craig
