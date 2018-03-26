@@ -8,402 +8,402 @@ $violet: rgba(190, 104, 190, 0.75)
 $gray: rgba(0,0,0,0.5)
 
 body
-	color: white
-	font-family: "Whitney SSm A", "Whitney SSm B", "Avenir Next", sans-serif
-	font-size: 200%
-	font-weight: 500
-	line-height: 1.5
-	margin: 0
+  color: white
+  font-family: "Whitney SSm A", "Whitney SSm B", "Avenir Next", sans-serif
+  font-size: 200%
+  font-weight: 500
+  line-height: 1.5
+  margin: 0
 
 a
-	color: white
-	text-decoration: none
-	transition: all 300ms ease-in-out
+  color: white
+  text-decoration: none
+  transition: all 300ms ease-in-out
 
 .hidden
-	display: none
+  display: none
 
 // ROYGBIV colors
 .red
-	background: $red
+  background: $red
 
 .orange
-	background: $orange
+  background: $orange
 
 .yellow
-	background: $yellow
+  background: $yellow
 
 .green
-	background: $green
+  background: $green
 
 .blue
-	background: $blue
+  background: $blue
 
 .indigo
-	background: $indigo
+  background: $indigo
 
 .violet
-	background: $violet
+  background: $violet
 
 .gray
-	background: $gray
+  background: $gray
 
 .red, .green, .blue, .indigo, .violet
-	.information-paragraph
-		a
-			border-bottom: 1.5px solid darken(white, 20%)
-			padding-bottom: 1.5px
+  .information-paragraph
+    a
+      border-bottom: 1.5px solid darken(white, 20%)
+      padding-bottom: 1.5px
 
-			&:hover, &:focus
-				border-bottom-color: white
+      &:hover, &:focus
+        border-bottom-color: white
 
 .orange, .yellow
-	color: $gray
+  color: $gray
 
-	a
-		color: $gray
+  a
+    color: $gray
 
-	.information-paragraph
-		a
-			border-bottom: 1.5px solid lighten($gray, 70%)
-			color: $gray
-			padding-bottom: 1.5px
+  .information-paragraph
+    a
+      border-bottom: 1.5px solid lighten($gray, 70%)
+      color: $gray
+      padding-bottom: 1.5px
 
-			&:hover, &:focus
-				border-bottom-color: $gray
+      &:hover, &:focus
+        border-bottom-color: $gray
 
 // Main horizontal and vertical container
 .container
-	display: flex
-	min-height: 100vh
+  display: flex
+  min-height: 100vh
 
 // Container for the text within the main container
 .content-container
-	align-items: center
-	display: flex
-	justify-content: space-between
-	margin: auto
-	max-width: 800px
-	width: 80%
+  align-items: center
+  display: flex
+  justify-content: space-between
+  margin: auto
+  max-width: 800px
+  width: 80%
 
-	// Gosh I love this Sass thing
-	.resume &
-		flex-direction: column
-		width: initial
+  // Gosh I love this Sass thing
+  .resume &
+    flex-direction: column
+    width: initial
 
 // Hover on a review, and the emoji moves
 .review
-	&:hover, &:focus
-		.quote-emoji
-			animation: pendulum 2s ease-in-out infinite alternate-reverse
+  &:hover, &:focus
+    .quote-emoji
+      animation: pendulum 2s ease-in-out infinite alternate-reverse
 
-	// This is for the `transform: scale()` on `.container:hover`
-	transition: transform 200ms ease-in-out
+  // This is for the `transform: scale()` on `.container:hover`
+  transition: transform 200ms ease-in-out
 
 // Overrides for regular .content-container
 .top
-	flex-direction: column
-	justify-content: center
+  flex-direction: column
+  justify-content: center
 
 .title
-	font-weight: 700
-	margin: 0
+  font-weight: 700
+  margin: 0
 
-	//- Not sure if I'll keep this
-	&:hover, &:focus
-		&:after
-			content: ' 😷'
+  //- Not sure if I'll keep this
+  &:hover, &:focus
+    &:after
+      content: ' 😷'
 
 .tagline
-	font-size: 0.75em
-	margin: 0
-	padding: 1em 0
-	text-transform: capitalize
+  font-size: 0.75em
+  margin: 0
+  padding: 1em 0
+  text-transform: capitalize
 
 .nav
-	margin: 0
-	padding: 1em 0
-	font-weight: bold
+  margin: 0
+  padding: 1em 0
+  font-weight: bold
 
 .nav-item
-	display: inline
-	margin: 0.5em
+  display: inline
+  margin: 0.5em
 
 .about-link
-	&:hover:after,
-	&:focus:after
-		content: ' ❔'
+  &:hover:after,
+  &:focus:after
+    content: ' ❔'
 
 .back-link
-	&:hover:after,
-	&:focus:after
-		content: ' 🏠'
+  &:hover:after,
+  &:focus:after
+    content: ' 🏠'
 
 .contact-links
-	&:hover:after,
-	&:focus:after
-		content: ' 📞'
+  &:hover:after,
+  &:focus:after
+    content: ' 📞'
 
 .arrow
-	height: 0
-	width: 0
-	margin: 1em auto
+  height: 0
+  width: 0
+  margin: 1em auto
 
-	// So, borders are triangle spaces, because who knows
-	border-left: 20px solid transparent
-	border-right: 20px solid transparent
-	border-top: 20px solid white
+  // So, borders are triangle spaces, because who knows
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  border-top: 20px solid white
 
-	// Bouncing
-	animation: swing 1s ease-in-out infinite
-	animation-delay: 1s
-	transition: border 150ms ease-in-out, transform 300ms ease-in
+  // Bouncing
+  animation: swing 1s ease-in-out infinite
+  animation-delay: 1s
+  transition: border 150ms ease-in-out, transform 300ms ease-in
 
-	// Spinning
-	&:hover, &:focus
-		transform: rotateZ(360deg)
-		animation-name: pulse
+  // Spinning
+  &:hover, &:focus
+    transform: rotateZ(360deg)
+    animation-name: pulse
 
 // Disables slide-in animations when accessed from another page
 \:target
-	.slide-in-right,
-	.slide-in-left
-		animation: none
+  .slide-in-right,
+  .slide-in-left
+    animation: none
 
 // For picture spin-thingy on :target. Jumpy, but no JavaScript!
 \:target
-	.profile-pic
-		animation: grow-rotate ease-out 1s
+  .profile-pic
+    animation: grow-rotate ease-out 1s
 
 // Modifies regular .container so that the image can be as big as possible
 .image-container
-	min-height: 100vh
+  min-height: 100vh
 
 .profile-pic-caption-container
-	margin: auto
+  margin: auto
 
-	&:hover, &:focus
-		.profile-pic-caption
-			opacity: 1
+  &:hover, &:focus
+    .profile-pic-caption
+      opacity: 1
 
 .profile-pic
-	clip-path: circle(50% at center)
-	display: block
-	// filter: contrast(115%) saturate(105%)
-	margin: 1em auto
-	max-width: 100%
-	transition: all 500ms ease-in-out
-	width: 80vh
+  clip-path: circle(50% at center)
+  display: block
+  // filter: contrast(115%) saturate(105%)
+  margin: 1em auto
+  max-width: 100%
+  transition: all 500ms ease-in-out
+  width: 80vh
 
 .profile-pic-caption
-	color: darken(white,10%)
-	font-size: 90%
-	font-style: italic
-	margin: 1em auto
-	opacity: 0
-	text-align: center
-	transition: opacity 200ms ease-in-out
+  color: darken(white,10%)
+  font-size: 90%
+  font-style: italic
+  margin: 1em auto
+  opacity: 0
+  text-align: center
+  transition: opacity 200ms ease-in-out
 
 .review
-	// Alternates emoji locations
-	&:nth-child(odd)
-		.quote-container
-			order: 2
-			text-align: right
+  // Alternates emoji locations
+  &:nth-child(odd)
+    .quote-container
+      order: 2
+      text-align: right
 
-		.emoji
-			order: 1
+    .emoji
+      order: 1
 
 // Container for the quote and emoji
 .quote-container
-	width: 60%
+  width: 60%
 
 .quote
-	font-style: italic
-	margin: 0
+  font-style: italic
+  margin: 0
 
 .source
-	font-size: 90%
+  font-size: 90%
 
 .source-link
-	&:hover::after,
-	&:focus::after
-		content: ' 🔗'
+  &:hover::after,
+  &:focus::after
+    content: ' 🔗'
 
 .quote-emoji
-	font-size: 450%
-	transition: all 300ms ease
-	// width: 20%
+  font-size: 450%
+  transition: all 300ms ease
+  // width: 20%
 
 // Adds a bounce when direct linking to review
 \:target
-	.quote-emoji
-		animation: bounce 2s ease-in-out infinite
+  .quote-emoji
+    animation: bounce 2s ease-in-out infinite
 
 .information-paragraph
-	line-height: 1.7
+  line-height: 1.7
 
 .resume-link
-	font-size: 500%
+  font-size: 500%
 
-	&:hover, &:focus
-		animation: tada 1s ease-in-out
-		// display: none
+  &:hover, &:focus
+    animation: tada 1s ease-in-out
+    // display: none
 
 .resume-text
-	font-size: 140%
+  font-size: 140%
 
 .contact-container
-	a
-		border-bottom: 0
+  a
+    border-bottom: 0
 
 .contact-emoji
-	font-size: 200%
-	text-align: center
+  font-size: 200%
+  text-align: center
 
 .contact-link
-	display: inline-block
-	margin: 0
-	padding: 0.25em 0.5em
-	transition: all 300ms ease
+  display: inline-block
+  margin: 0
+  padding: 0.25em 0.5em
+  transition: all 300ms ease
 
-	&:hover, &:focus
-		background-color: rgba(255,255,255,0.3)
-		border-radius: 1em
-		transform: rotateZ(360deg)
+  &:hover, &:focus
+    background-color: rgba(255,255,255,0.3)
+    border-radius: 1em
+    transform: rotateZ(360deg)
 
 // Contact jump animation
 \:target
-	.contact-emoji
-		animation: bounce 3s ease-in-out
+  .contact-emoji
+    animation: bounce 3s ease-in-out
 
-		// Almost like it's a cascade effect or something
-		&:nth-child(2)
-			animation-delay: 250ms
-		&:nth-child(3)
-			animation-delay: 500ms
-		&:nth-child(4)
-			animation-delay: 750ms
-		&:nth-child(5)
-			animation-delay: 1s
+    // Almost like it's a cascade effect or something
+    &:nth-child(2)
+      animation-delay: 250ms
+    &:nth-child(3)
+      animation-delay: 500ms
+    &:nth-child(4)
+      animation-delay: 750ms
+    &:nth-child(5)
+      animation-delay: 1s
 
 // Modifies the regular .container
 .footer
-	color: white
-	font-size: medium
-	min-height: initial
+  color: white
+  font-size: medium
+  min-height: initial
 
 .copyright
-	margin: 1em auto
+  margin: 1em auto
 
 // Weird, but I need this for iPads
 @media (max-width: 1400px)
-	body
-		font-size: 150%
+  body
+    font-size: 150%
 
-	.profile-pic-caption
-		opacity: 1
+  .profile-pic-caption
+    opacity: 1
 
 @media (max-width: 740px)
-	.about
-		font-size: 130%
+  .about
+    font-size: 130%
 
-	.profile-pic-caption
-		opacity: 1
+  .profile-pic-caption
+    opacity: 1
 
-	.content-container
-		flex-direction: column
-		text-align: center
+  .content-container
+    flex-direction: column
+    text-align: center
 
-	.information-paragraph
-		text-align: initial
+  .information-paragraph
+    text-align: initial
 
-	.review
-		// I targeted the odd .reviews earlier, so now I have to explicietly re-target them, *and* the even .reviews as well
-		// Ideally, I'd use JavaScript to apply a class of `textAlignRight` to every even .review that I could then easily target via CSS Iinstead of using this cascade
-		&:nth-child(odd), &:nth-child(even)
-			.quote-container
-				order: 2
-				text-align: center
+  .review
+    // I targeted the odd .reviews earlier, so now I have to explicietly re-target them, *and* the even .reviews as well
+    // Ideally, I'd use JavaScript to apply a class of `textAlignRight` to every even .review that I could then easily target via CSS Iinstead of using this cascade
+    &:nth-child(odd), &:nth-child(even)
+      .quote-container
+        order: 2
+        text-align: center
 
-			.emoji
-				order: 1
+      .emoji
+        order: 1
 
-	.quote-container,
-	.quote-emoji
-		margin: auto
-		width: 100%
+  .quote-container,
+  .quote-emoji
+    margin: auto
+    width: 100%
 
 @media (max-width: 320px)
-	body
-		font-size: 110%
+  body
+    font-size: 110%
 
 .slide-in-right
-	animation: slide-in-right 2s ease
+  animation: slide-in-right 2s ease
 
 @keyframes slide-in-right
-	0%
-		transform: translateX(-100vw)
-		opacity: 0
-	50%
-		transform: translateX(10vw)
-		opacity: 0.5
-	100%
-		transform: translateX(0)
-		opacity: 1
+  0%
+    transform: translateX(-100vw)
+    opacity: 0
+  50%
+    transform: translateX(10vw)
+    opacity: 0.5
+  100%
+    transform: translateX(0)
+    opacity: 1
 
 .slide-in-left
-	animation: slide-in-left 2s ease
+  animation: slide-in-left 2s ease
 
 @keyframes slide-in-left
-	0%
-		transform: translateX(100vw)
-		opacity: 0
-	50%
-		transform: translateX(-10vw)
-		opacity: 0.5
-	100%
-		transform: translateX(0)
-		opacity: 1
+  0%
+    transform: translateX(100vw)
+    opacity: 0
+  50%
+    transform: translateX(-10vw)
+    opacity: 0.5
+  100%
+    transform: translateX(0)
+    opacity: 1
 
 // Tied to the animation property above
 @keyframes bounce
-	0%, 60%, 70%, 80%, 90%, 100%
-		transform: translateY(0)
-	10%
-		transform: translateY(-50%)
-	20%
-		transform: translateY(0)
-	30%
-		transform: translateY(-25%)
-	40%
-		transform: translateY(0)
-	50%
-		transform: translateY(-10%)
+  0%, 60%, 70%, 80%, 90%, 100%
+    transform: translateY(0)
+  10%
+    transform: translateY(-50%)
+  20%
+    transform: translateY(0)
+  30%
+    transform: translateY(-25%)
+  40%
+    transform: translateY(0)
+  50%
+    transform: translateY(-10%)
 
 @keyframes pendulum
-	0%, 100%
-		transform: translate(0)
-	33%
-		transform: translate(-0.5em)
-	66%
-		transform: translate(0.5em)
+  0%, 100%
+    transform: translate(0)
+  33%
+    transform: translate(-0.5em)
+  66%
+    transform: translate(0.5em)
 
 // For about page
 .slide-down
-	animation: slide-down 1s ease-out
+  animation: slide-down 1s ease-out
 
 @keyframes slide-down
-	from
-		transform: translateY(-200px)
-		opacity: 0
-	to
-		transform: translateY(0)
-		opacity: 1
+  from
+    transform: translateY(-200px)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
 
 // For picture spin-thingy on \:target
 @keyframes grow-rotate
-	from
-		transform: scale(1.1) rotateZ(360deg)
-	to
-		transform: scale(1) rotateZ(0deg)
+  from
+    transform: scale(1.1) rotateZ(360deg)
+  to
+    transform: scale(1) rotateZ(0deg)

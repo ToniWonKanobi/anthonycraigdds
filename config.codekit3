@@ -2188,6 +2188,23 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/styles-404.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/styles-404-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/styles-404.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/styles-404.css.map",
+		"oF": 0
+		},
 	"\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -2205,21 +2222,21 @@
 		"oAP": "\/css\/styles.css.map",
 		"oF": 0
 		},
-	"\/images\/anthonycraigdds-square.jpg": {
+	"\/images\/AnthonyCraigDDS-square.jpg": {
 		"ft": 16384,
 		"iS": 247360,
 		"oA": 0,
-		"oAP": "\/images\/anthonycraigdds-square.jpg",
+		"oAP": "\/images\/AnthonyCraigDDS-square.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"\/images\/anthonycraigdds.jpg": {
+	"\/images\/AnthonyCraigDDS.jpg": {
 		"ft": 16384,
 		"iS": 348583,
 		"oA": 0,
-		"oAP": "\/images\/anthonycraigdds.jpg",
+		"oAP": "\/images\/AnthonyCraigDDS.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

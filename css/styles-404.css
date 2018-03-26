@@ -1,0 +1,43 @@
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: blue;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Courier;
+  font-size: initial;
+  font-style: normal;
+  font-weight: initial;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.4; }
+
+main {
+  padding: 1em; }
+
+h2 {
+  background: white;
+  color: blue;
+  margin: 1em auto 0.5em auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 290px; }
+
+li {
+  list-style-type: disc; }
+
+p:last-of-type {
+  margin-top: 2em;
+  text-align: center; }
+
+a {
+  color: white;
+  text-decoration: underline; }
+/*# sourceMappingURL=styles-404.css.map */
