@@ -7,7 +7,7 @@
 		"uuidString": "3C0D4DD3-A83C-40D9-8AF8-AA68A48F9A02"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/404.html": {
 		"cB": 0,
@@ -2225,6 +2225,7 @@
 	"\/images\/AnthonyCraigDDS-square.jpg": {
 		"ft": 16384,
 		"iS": 247360,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/AnthonyCraigDDS-square.jpg",
 		"oF": 0,
@@ -2235,6 +2236,7 @@
 	"\/images\/AnthonyCraigDDS.jpg": {
 		"ft": 16384,
 		"iS": 348583,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/AnthonyCraigDDS.jpg",
 		"oF": 0,
@@ -2267,6 +2269,7 @@
 	"\/images\/drtoni.jpg": {
 		"ft": 16384,
 		"iS": 68501,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/drtoni.jpg",
 		"oF": 0,
@@ -2277,6 +2280,7 @@
 	"\/images\/family.jpg": {
 		"ft": 16384,
 		"iS": 388922,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/images\/family.jpg",
 		"oF": 0,
@@ -2420,7 +2424,8 @@
 	"creationDate": 516948329,
 	"displayValue": "anthonycraigdds.com",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "\/images\/favicon.png"
+	"iconImageName": "\/images\/favicon.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4223,6 +4228,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
