@@ -50,41 +50,25 @@ html(lang="en").toni
               .arrow
 
     main
-      section#more.violet.container
-        .content-container.image-container
-          figure.profile-pic-caption-container
-            img.profile-pic.wow.bounceInUp(data-wow-duration="1s" src="images/family.jpg" title="Dr. Craig with his wife, Allison, and dog, Smokey")
-            figcaption.profile-pic-caption.wow.bounceInUp(data-wow-duration="1s") Dr. Craig and his wife, Allison, and dog, Smokey
-
-      section#resume
-        h2.hidden Resume
-        .indigo.container.resume
-          .content-container.wow.lightSpeedIn
-            a.resume-link(href="/Resume.pdf" title="Link to my Resume") 📝
-            p.resume-text.wow.lightSpeedIn(data-wow-delay="800ms") Resume
-        
+      section#more
         h2.hidden Information
-        .blue.container
-          .content-container.information-paragraph.wow.fadeInUp
-            p After graduating from <a href="https://dentistry.llu.edu/" title="LLUSD">Loma Linda University School of Dentistry</a>, Dr. Anthony Craig spent the next few years practicing in Southern California. He recently moved back to Northern California to join a private practice in Dixon.
-
-        .green.container
+        .red.container
           .content-container.information-paragraph.wow.fadeInUp
             p Besides all of the typical dental services you might expect (<a href="https://en.wikipedia.org/wiki/Dental_restoration" title="Wikipeida: Dental restorations">fillings</a>, <a href="https://en.wikipedia.org/wiki/Crown_(dentistry)" title="Wikipedia: Dental crowns">crowns</a>, <a href="https://en.wikipedia.org/wiki/Dentures" title="Wikipedia: Dentures"> dentures</a>, etc.), he has extensive training in <a href="https://en.wikipedia.org/wiki/CAD/CAM_dentistry" title="Wikipedia: CAD/CAM dentistry">CAD/CAM dentistry</a>, as well as restoring <a href="https://en.wikipedia.org/wiki/Dental_implant" title="Wikipedia: Dental implants">dental implants</a>.
 
-        .yellow.container
-          .content-container.information-paragraph.wow.fadeInUp
-            p Dr. Craig grew up in Central California, and attended <a href="http://www.puc.edu/academics/departments/chemistry/home" title="PUC Chemistry Department">Pacific Union College</a>, near Napa, CA for his undergraduate training. There he met his wife, <a href="http://allisoncraigdds.com" title="Allison's website">Allison</a>. Currently, Dr. Craig lives with Allison, and their dog, <a href="http://smokeythedingo.dog" title="Smokey on the interwebs">Smokey</a>, in Vacaville, CA.
-
         .orange.container
+          .content-container.information-paragraph.wow.fadeInUp
+            p Dr. Craig grew up in Central California, and attended <a href="http://www.puc.edu/academics/departments/chemistry/home" title="PUC Chemistry Department">Pacific Union College</a>, near Napa, CA for his undergraduate training.
+
+        .yellow.container
           .content-container.information-paragraph.wow.fadeInUp
             p When he's not at the office, Dr. Craig enjoys all things tech. (He even built this <a href="https://github.com/ToniWonKanobi/anthonycraigdds" title="GitHub repo for this website">website</a>!) He's a fan of Porsche and motorsports in general, and likes to talk watches as well. He plays <a href="https://www.youtube.com/watch?v=LvhfpJ_6Hoo" title="Playing for the Michael Jackson concert">bass guitar</a>, and knows more about <a href="https://theoveranalyzed.net/tags/Star%20Wars" title="Dr. Craig's posts about Star Wars">Star Wars</a> than any dentist should.
 
-        .red.container
+        .green.container
           .content-container.information-paragraph.wow.fadeInUp
             p If coming to the dentist is something you dread, fear not! Dr. Craig is ready to take you on&mdash;no matter how difficult you think your situation might be.
 
-        .violet.container
+        .blue.container
           .content-container.information-paragraph.wow.fadeInUp
             p Taking care of your dental issues is very important. But what's more important is making patients feel comfortable. Dr. Craig strives to make every patient feel welcome and safe.
 
@@ -93,24 +77,8 @@ html(lang="en").toni
         .indigo.container
           .content-container.contact-container.wow.bounceInUp(data-wow-duration="1s")
             .contact-emoji
-              a.contact-link(href="http://maps.apple.com/?q=Anthony+Craig+DDS" title="Apple Maps address link") 🏢 
-                span.hidden Address
-
-            .contact-emoji
-              a.contact-link(href="tel:1-707-678-9296" title="Call this phone number to book your appointment") 📱 
-                span.hidden Telephone Number
-
-            .contact-emoji
               a.contact-link(href="mailto:doctor@anthonycraigdds.com" title="Email me") ✉️ 
                 span.hidden Email
-
-            .contact-emoji
-              a.contact-link(href="http://twitter.com/anthonycraigdds" title="Dr. Anthony Craig on Twitter") 🐦 
-                span.hidden Twitter
-
-            .contact-emoji
-              a.contact-link(href="http://instagram.com/anthonycraigdds" title="Dr. Anthony Craig on Instagram") 📷 
-                span.hidden Instagram
 
     footer
       .gray.container.footer
@@ -120,4 +88,4 @@ html(lang="en").toni
             script.
               new Date().getFullYear()>2015 && document.write('Copyright &copy; 2015&ndash;' + new Date().getFullYear());
             |  
-            a(href="http://anthonycraig.me" title="Site's creator") Anthony&nbsp;Craig
+            span Anthony&nbsp;Craig

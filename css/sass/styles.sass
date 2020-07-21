@@ -87,9 +87,13 @@ a
   width: 80%
 
   // Gosh I love this Sass thing
-  .resume &
-    flex-direction: column
-    width: initial
+  // .resume &
+  //   flex-direction: column
+  //   width: initial
+
+// Should be able to nest this
+section#contact .content-container
+  justify-content: center
 
 // Hover on a review, and the emoji moves
 .review
@@ -142,7 +146,7 @@ a
 .contact-links
   &:hover:after,
   &:focus:after
-    content: ' 📞'
+    content: ' ✉️'
 
 .arrow
   height: 0
