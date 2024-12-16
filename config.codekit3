@@ -25,6 +25,14 @@
       "oAP" : "\/about.html",
       "oF" : 0
     },
+    "\/Anthony Craig Resume.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 2,
+      "oAP" : "\/Anthony Craig Resume.pdf",
+      "oF" : 0
+    },
     "\/bower_components\/animate.css\/.bower.json" : {
       "ft" : 524288,
       "oA" : 2,
@@ -1238,7 +1246,7 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/0DB9059A51B47C124.css" : {
+    "\/css\/fonts\/878382\/0C7E9FA5DCCF6DDA6.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1246,19 +1254,43 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/0DB9059A51B47C124-min.css",
+      "oAP" : "\/css\/fonts\/878382\/0C7E9FA5DCCF6DDA6-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/0F7827D01492BB59E.eot" : {
+    "\/css\/fonts\/878382\/0D3D36422484A43D3.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/0D3D36422484A43D3-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/00F14DAF90307DA65.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/00F14DAF90307DA65-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/0F7827D01492BB59E.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/0F7827D01492BB59E.eot",
+      "oAP" : "\/css\/fonts\/878382\/0F7827D01492BB59E.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/1EB67203AB789AB0F.css" : {
+    "\/css\/fonts\/878382\/1D8A962B6E6AFAA89.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1266,11 +1298,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/1EB67203AB789AB0F-min.css",
+      "oAP" : "\/css\/fonts\/878382\/1D8A962B6E6AFAA89-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/1FE3CB901E431CFCE.css" : {
+    "\/css\/fonts\/878382\/04EF55BC6EEB601E9.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1278,11 +1310,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/1FE3CB901E431CFCE-min.css",
+      "oAP" : "\/css\/fonts\/878382\/04EF55BC6EEB601E9-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/3BBCB38132344877D.css" : {
+    "\/css\/fonts\/878382\/05ABB93B2E56F455C.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1290,11 +1322,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/3BBCB38132344877D-min.css",
+      "oAP" : "\/css\/fonts\/878382\/05ABB93B2E56F455C-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/4F53A819DE653D85E.css" : {
+    "\/css\/fonts\/878382\/6E1371DCACEDEA7A4.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1302,11 +1334,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/4F53A819DE653D85E-min.css",
+      "oAP" : "\/css\/fonts\/878382\/6E1371DCACEDEA7A4-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/5DC5E3415B053F7BF.css" : {
+    "\/css\/fonts\/878382\/6FEFB53AAB45A2138.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1314,11 +1346,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/5DC5E3415B053F7BF-min.css",
+      "oAP" : "\/css\/fonts\/878382\/6FEFB53AAB45A2138-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/6D9589F8FD790CBB8.css" : {
+    "\/css\/fonts\/878382\/7F1EA0F609E5815F6.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1326,11 +1358,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/6D9589F8FD790CBB8-min.css",
+      "oAP" : "\/css\/fonts\/878382\/7F1EA0F609E5815F6-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/6ED73961BC5704480.css" : {
+    "\/css\/fonts\/878382\/19C3099211BC677FE.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1338,103 +1370,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/6ED73961BC5704480-min.css",
+      "oAP" : "\/css\/fonts\/878382\/19C3099211BC677FE-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/7B618E66B3DB9AFC9.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/7B618E66B3DB9AFC9-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/7BA74C5F32D0ED068.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/7BA74C5F32D0ED068-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/8D158D20E2D75186C.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/8D158D20E2D75186C-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/8ECD9C4E3F9DDA604.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/8ECD9C4E3F9DDA604-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/9C2522F53F519C9C8.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/9C2522F53F519C9C8-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/17CE94C8AC20BA7C9.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/17CE94C8AC20BA7C9-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/23F8CE967178056E8.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/23F8CE967178056E8-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/58C11197D3B621FE5.eot" : {
+    "\/css\/fonts\/878382\/58C11197D3B621FE5.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/58C11197D3B621FE5.eot",
+      "oAP" : "\/css\/fonts\/878382\/58C11197D3B621FE5.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/67A3BC3D0B099D2F2.css" : {
+    "\/css\/fonts\/878382\/65A47D252570C9CA2.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1442,11 +1390,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/67A3BC3D0B099D2F2-min.css",
+      "oAP" : "\/css\/fonts\/878382\/65A47D252570C9CA2-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/69E541FE3124E132E.css" : {
+    "\/css\/fonts\/878382\/75D6AD2AFD7AD9A91.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1454,27 +1402,39 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/69E541FE3124E132E-min.css",
+      "oAP" : "\/css\/fonts\/878382\/75D6AD2AFD7AD9A91-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/77B6BB96C7D460315.eot" : {
+    "\/css\/fonts\/878382\/77B6BB96C7D460315.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/77B6BB96C7D460315.eot",
+      "oAP" : "\/css\/fonts\/878382\/77B6BB96C7D460315.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/203EE494582769156.eot" : {
+    "\/css\/fonts\/878382\/80A4CCC36525B7578.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/80A4CCC36525B7578-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/203EE494582769156.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/203EE494582769156.eot",
+      "oAP" : "\/css\/fonts\/878382\/203EE494582769156.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/204E1185CED996F1B.css" : {
+    "\/css\/fonts\/878382\/556BC9559DF15BF2E.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1482,11 +1442,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/204E1185CED996F1B-min.css",
+      "oAP" : "\/css\/fonts\/878382\/556BC9559DF15BF2E-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/837A64CF18C317FF9.css" : {
+    "\/css\/fonts\/878382\/771D516DFECF85EEE.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1494,11 +1454,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/837A64CF18C317FF9-min.css",
+      "oAP" : "\/css\/fonts\/878382\/771D516DFECF85EEE-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/5881FD35FB5F9EC30.css" : {
+    "\/css\/fonts\/878382\/779FD113F3C9A78A0.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1506,11 +1466,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/5881FD35FB5F9EC30-min.css",
+      "oAP" : "\/css\/fonts\/878382\/779FD113F3C9A78A0-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/7760BB5A1AA711392.css" : {
+    "\/css\/fonts\/878382\/1479A201C93F68C8E.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1518,19 +1478,79 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/7760BB5A1AA711392-min.css",
+      "oAP" : "\/css\/fonts\/878382\/1479A201C93F68C8E-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/54746D1D9E0DC8A0A.eot" : {
+    "\/css\/fonts\/878382\/2172A3E33ED9BA887.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/2172A3E33ED9BA887-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/6365CCF6DB0A8B2FC.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/6365CCF6DB0A8B2FC-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/9257F1821FF27EE2E.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/9257F1821FF27EE2E-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/9372B5BDB23AB050E.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/9372B5BDB23AB050E-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/016164E527442AD6D.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/fonts\/878382\/016164E527442AD6D-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/css\/fonts\/878382\/54746D1D9E0DC8A0A.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/54746D1D9E0DC8A0A.eot",
+      "oAP" : "\/css\/fonts\/878382\/54746D1D9E0DC8A0A.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/A5C057A3205480268.css" : {
+    "\/css\/fonts\/878382\/68976F04F40E1283D.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1538,11 +1558,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/A5C057A3205480268-min.css",
+      "oAP" : "\/css\/fonts\/878382\/68976F04F40E1283D-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/A5E5249D0F5A44825.css" : {
+    "\/css\/fonts\/878382\/3256309936FD1E01E.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1550,19 +1570,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/A5E5249D0F5A44825-min.css",
+      "oAP" : "\/css\/fonts\/878382\/3256309936FD1E01E-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/A6E1F53ED4E7C1B36.eot" : {
+    "\/css\/fonts\/878382\/A6E1F53ED4E7C1B36.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/A6E1F53ED4E7C1B36.eot",
+      "oAP" : "\/css\/fonts\/878382\/A6E1F53ED4E7C1B36.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/A22154D71C8EC72C6.css" : {
+    "\/css\/fonts\/878382\/A1043E357EE4256FD.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1570,11 +1590,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/A22154D71C8EC72C6-min.css",
+      "oAP" : "\/css\/fonts\/878382\/A1043E357EE4256FD-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/A0037723E63C7D17E.css" : {
+    "\/css\/fonts\/878382\/AC9D53C462A6E366B.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1582,11 +1602,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/A0037723E63C7D17E-min.css",
+      "oAP" : "\/css\/fonts\/878382\/AC9D53C462A6E366B-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/AB51EC7F2C0A014EF.css" : {
+    "\/css\/fonts\/878382\/AF7CC13D023AE91EB.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1594,31 +1614,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/AB51EC7F2C0A014EF-min.css",
+      "oAP" : "\/css\/fonts\/878382\/AF7CC13D023AE91EB-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/ACA4A732C61D12486.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/ACA4A732C61D12486-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/css\/fonts\/640796\/B12D7E83C51EA1F1B.eot" : {
+    "\/css\/fonts\/878382\/B12D7E83C51EA1F1B.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/B12D7E83C51EA1F1B.eot",
+      "oAP" : "\/css\/fonts\/878382\/B12D7E83C51EA1F1B.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/BE5A3DB6A3CAAD33E.css" : {
+    "\/css\/fonts\/878382\/B604F09DCDADE5FB4.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1626,11 +1634,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/BE5A3DB6A3CAAD33E-min.css",
+      "oAP" : "\/css\/fonts\/878382\/B604F09DCDADE5FB4-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/C376CE2A54EE23696.css" : {
+    "\/css\/fonts\/878382\/B805864E469DAE0CD.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1638,11 +1646,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/C376CE2A54EE23696-min.css",
+      "oAP" : "\/css\/fonts\/878382\/B805864E469DAE0CD-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/D6C11A9BAF6E51E67.css" : {
+    "\/css\/fonts\/878382\/C6EF810635009B8C8.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1650,11 +1658,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/D6C11A9BAF6E51E67-min.css",
+      "oAP" : "\/css\/fonts\/878382\/C6EF810635009B8C8-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/D7D56606854FBEE73.css" : {
+    "\/css\/fonts\/878382\/C4897672F0A274150.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1662,11 +1670,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/D7D56606854FBEE73-min.css",
+      "oAP" : "\/css\/fonts\/878382\/C4897672F0A274150-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/D9FECC27214549491.css" : {
+    "\/css\/fonts\/878382\/CB79F2C035690598D.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1674,11 +1682,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/D9FECC27214549491-min.css",
+      "oAP" : "\/css\/fonts\/878382\/CB79F2C035690598D-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/D34B0762BB0CE9286.css" : {
+    "\/css\/fonts\/878382\/D9F9488900CAA8DD0.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1686,11 +1694,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/D34B0762BB0CE9286-min.css",
+      "oAP" : "\/css\/fonts\/878382\/D9F9488900CAA8DD0-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/DD4AB298587C3AD02.css" : {
+    "\/css\/fonts\/878382\/DCD0643F0A8EAF409.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1698,19 +1706,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/DD4AB298587C3AD02-min.css",
+      "oAP" : "\/css\/fonts\/878382\/DCD0643F0A8EAF409-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/DD09F5618FB24F2F6.eot" : {
+    "\/css\/fonts\/878382\/DD09F5618FB24F2F6.eot" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 2,
-      "oAP" : "\/css\/fonts\/640796\/DD09F5618FB24F2F6.eot",
+      "oAP" : "\/css\/fonts\/878382\/DD09F5618FB24F2F6.eot",
       "oF" : 0
     },
-    "\/css\/fonts\/640796\/DE80B9DD53D36EA9F.css" : {
+    "\/css\/fonts\/878382\/E8745C566321CF65F.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1718,11 +1726,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/DE80B9DD53D36EA9F-min.css",
+      "oAP" : "\/css\/fonts\/878382\/E8745C566321CF65F-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/DEB1ADDBCC7970E0F.css" : {
+    "\/css\/fonts\/878382\/E9870953331629EE2.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1730,11 +1738,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/DEB1ADDBCC7970E0F-min.css",
+      "oAP" : "\/css\/fonts\/878382\/E9870953331629EE2-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/E6B7E587A9272CAD1.css" : {
+    "\/css\/fonts\/878382\/EFA0B94FAA76A10E7.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1742,11 +1750,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/E6B7E587A9272CAD1-min.css",
+      "oAP" : "\/css\/fonts\/878382\/EFA0B94FAA76A10E7-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/E55D8D53EFE3BF609.css" : {
+    "\/css\/fonts\/878382\/FC3805CA321E3AA92.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1754,11 +1762,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/E55D8D53EFE3BF609-min.css",
+      "oAP" : "\/css\/fonts\/878382\/FC3805CA321E3AA92-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/F242A91E7E3A98555.css" : {
+    "\/css\/fonts\/878382\/FEE5C47C30D83EE77.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1766,11 +1774,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/F242A91E7E3A98555-min.css",
+      "oAP" : "\/css\/fonts\/878382\/FEE5C47C30D83EE77-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/css\/fonts\/640796\/FAC8B3EC102CE469A.css" : {
+    "\/css\/fonts\/878382\/FF858CC2183C4E147.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -1778,7 +1786,7 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/css\/fonts\/640796\/FAC8B3EC102CE469A-min.css",
+      "oAP" : "\/css\/fonts\/878382\/FF858CC2183C4E147-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -2588,32 +2596,6 @@
       "oAP" : "\/css\/styles.css.map",
       "oF" : 0
     },
-    "\/images\/AnthonyCraigDDS-square.jpg" : {
-      "ft" : 16384,
-      "iS" : 247360,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/AnthonyCraigDDS-square.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/AnthonyCraigDDS.jpg" : {
-      "ft" : 16384,
-      "iS" : 348583,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/AnthonyCraigDDS.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/images\/ashleydreview.png" : {
       "ft" : 32768,
       "iS" : 85889,
@@ -2640,22 +2622,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/drtoni.jpg" : {
+    "\/images\/family.jpeg" : {
       "ft" : 16384,
-      "iS" : 68501,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/drtoni.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/family.jpg" : {
-      "ft" : 16384,
-      "iS" : 388922,
+      "iS" : 1101628,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/images\/family.jpg",
@@ -2799,14 +2768,6 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
-    },
-    "\/Resume.pdf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/Resume.pdf",
-      "oF" : 0
     }
   },
   "hooks" : [
