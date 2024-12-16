@@ -2674,6 +2674,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/images\/toni.jpeg" : {
+      "ft" : 16384,
+      "iS" : 4019400,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/images\/toni.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/images\/tooth.svg" : {
       "ft" : 2097152,
       "miP" : 0,
